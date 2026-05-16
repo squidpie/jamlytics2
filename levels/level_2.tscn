@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cb874aic1ju8d"]
+
+[ext_resource type="PackedScene" uid="uid://itx4nwmo0fqw" path="res://levels/level_base.tscn" id="1_mi4ay"]
+
+[node name="LevelBase" unique_id=748981199 instance=ExtResource("1_mi4ay")]
+
+[node name="Label" parent="." index="1" unique_id=674480825]
+text = ":: OXYGEN ::"

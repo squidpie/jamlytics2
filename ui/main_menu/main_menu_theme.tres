@@ -1,0 +1,9 @@
+[gd_resource type="Theme" format=3 uid="uid://bcu4atonns6mh"]
+
+[ext_resource type="Texture2D" uid="uid://cw0d88tvluxgv" path="res://assets/img/fragment_icon.png" id="1_gh2c2"]
+[ext_resource type="StyleBox" uid="uid://w32pjateqt8" path="res://ui/main_menu/slider_stylebox.tres" id="2_sp8w7"]
+
+[resource]
+VSlider/icons/grabber = ExtResource("1_gh2c2")
+VSlider/icons/grabber_highlight = ExtResource("1_gh2c2")
+VSlider/styles/slider = ExtResource("2_sp8w7")

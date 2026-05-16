@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://cy3isnhpf4r1p"]
+
+[ext_resource type="Texture2D" uid="uid://b7ueenm4uk4lx" path="res://assets/img/core_icon.png" id="1_0dkrt"]
+[ext_resource type="Script" uid="uid://cgjrhxg3jx86j" path="res://ui/main_menu/main_menu.gd" id="1_omy8q"]
+[ext_resource type="PackedScene" uid="uid://b837j5nuudocn" path="res://ui/main_menu/fragment_slider.tscn" id="2_mu8pm"]
+
+[node name="MainMenu" type="Control" unique_id=26582682]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_omy8q")
+
+[node name="BackgroundFill" type="ColorRect" parent="." unique_id=320723059]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09869913, 0.06660893, 0.023399318, 1)
+
+[node name="CoreIcon" type="TextureRect" parent="." unique_id=889546923]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -63.0
+offset_top = -54.0
+offset_right = 65.0
+offset_bottom = 74.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_0dkrt")
+
+[node name="FragmentSlider1" parent="." unique_id=1074475101 instance=ExtResource("2_mu8pm")]
+layout_mode = 0
+offset_left = 235.0
+offset_top = 68.00001
+offset_right = 363.0
+offset_bottom = 246.49591
+rotation = -0.64808285
+
+[node name="FragmentSlider2" parent="." unique_id=1464066816 instance=ExtResource("2_mu8pm")]
+layout_mode = 0
+offset_left = 487.0
+offset_top = -7.0
+offset_right = 615.0
+offset_bottom = 171.49591
+rotation = 0.74206376
+
+[node name="FragmentSlider3" parent="." unique_id=1097243399 instance=ExtResource("2_mu8pm")]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 131.0
+offset_right = 738.0
+offset_bottom = 309.4959
+rotation = 1.5540926
+
+[node name="FragmentSlider4" parent="." unique_id=297734966 instance=ExtResource("2_mu8pm")]
+layout_mode = 0
+offset_left = 579.0
+offset_top = 307.99997
+offset_right = 707.0
+offset_bottom = 486.49588
+rotation = 2.3490446
+
+[node name="FragmentSlider5" parent="." unique_id=757887381 instance=ExtResource("2_mu8pm")]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 400.00003
+offset_right = 470.0
+offset_bottom = 578.496
+rotation = 3.7573087
+
+[node name="FragmentSlider6" parent="." unique_id=1874011463 instance=ExtResource("2_mu8pm")]
+layout_mode = 0
+offset_left = 202.99997
+offset_top = 266.0
+offset_right = 330.99997
+offset_bottom = 444.49594
+rotation = 4.6941643
+
+[connection signal="fragment_selected" from="FragmentSlider1" to="." method="_on_fragment_slider_1_fragment_selected"]
+[connection signal="fragment_selected" from="FragmentSlider2" to="." method="_on_fragment_slider_2_fragment_selected"]
+[connection signal="fragment_selected" from="FragmentSlider3" to="." method="_on_fragment_slider_3_fragment_selected"]
+[connection signal="fragment_selected" from="FragmentSlider4" to="." method="_on_fragment_slider_4_fragment_selected"]
+[connection signal="fragment_selected" from="FragmentSlider5" to="." method="_on_fragment_slider_5_fragment_selected"]
+[connection signal="fragment_selected" from="FragmentSlider6" to="." method="_on_fragment_slider_6_fragment_selected"]

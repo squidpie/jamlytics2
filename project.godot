@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="Jamlytics2"
+run/main_scene="uid://bfhpxvdgyc3d2"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=800
+window/size/viewport_height=360
 
 [dotnet]
 

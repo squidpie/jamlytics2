@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bk2ywpn0i2ecd"]
+
+[ext_resource type="PackedScene" uid="uid://itx4nwmo0fqw" path="res://levels/level_base.tscn" id="1_6up2b"]
+
+[node name="LevelBase" unique_id=748981199 instance=ExtResource("1_6up2b")]
+
+[node name="Label" parent="." index="1" unique_id=674480825]
+text = ":: HYDROGEN ::"

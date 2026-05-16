@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b837j5nuudocn"]
+
+[ext_resource type="Theme" uid="uid://bcu4atonns6mh" path="res://ui/main_menu/main_menu_theme.tres" id="1_2wiqi"]
+[ext_resource type="Script" uid="uid://bcnfsy8xdanmk" path="res://ui/main_menu/fragment_slider.gd" id="2_ep533"]
+
+[node name="FragmentSlider" type="VSlider" unique_id=1074475101]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 130.0
+offset_bottom = 198.72949
+rotation = -0.00213933
+theme = ExtResource("1_2wiqi")
+value = 100.0
+script = ExtResource("2_ep533")
+
+[connection signal="drag_ended" from="." to="." method="_on_drag_ended"]

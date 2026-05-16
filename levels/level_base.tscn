@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://itx4nwmo0fqw"]
+
+[ext_resource type="Script" uid="uid://73mghudfqe4v" path="res://levels/level_base.gd" id="1_hk6b7"]
+
+[node name="LevelBase" type="Node" unique_id=748981199]
+script = ExtResource("1_hk6b7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1867578199]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.16440657, 0.17006674, 0.118044175, 1)
+
+[node name="Label" type="Label" parent="." unique_id=674480825]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = ":: LEVEL NAME ::"
+horizontal_alignment = 1
+vertical_alignment = 1
