@@ -44,51 +44,81 @@ texture_disabled = ExtResource("3_3c04x")
 script = ExtResource("3_i5wg5")
 
 [node name="FragmentSlider1" parent="." unique_id=1074475101 instance=ExtResource("2_mu8pm")]
-layout_mode = 0
-offset_left = 235.0
-offset_top = 68.00001
-offset_right = 363.0
-offset_bottom = 246.49591
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.499
+anchor_top = 0.54700005
+anchor_right = 0.499
+anchor_bottom = 0.54700005
+offset_left = -164.20001
+offset_top = -128.92001
+offset_right = -36.200012
+offset_bottom = 49.575897
 rotation = -0.64808285
 
 [node name="FragmentSlider2" parent="." unique_id=1464066816 instance=ExtResource("2_mu8pm")]
-layout_mode = 0
-offset_left = 487.0
-offset_top = -7.0
-offset_right = 615.0
-offset_bottom = 171.49591
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.504
+anchor_top = 0.545
+anchor_right = 0.504
+anchor_bottom = 0.545
+offset_left = 83.79999
+offset_top = -203.20001
+offset_right = 211.79999
+offset_bottom = -24.704102
 rotation = 0.74206376
 
 [node name="FragmentSlider3" parent="." unique_id=1097243399 instance=ExtResource("2_mu8pm")]
-layout_mode = 0
-offset_left = 610.0
-offset_top = 131.0
-offset_right = 738.0
-offset_bottom = 309.4959
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.551
+anchor_right = 0.5
+anchor_bottom = 0.551
+offset_left = 210.0
+offset_top = -67.36
+offset_right = 338.0
+offset_bottom = 111.13591
 rotation = 1.5540926
 
 [node name="FragmentSlider4" parent="." unique_id=297734966 instance=ExtResource("2_mu8pm")]
-layout_mode = 0
-offset_left = 579.0
-offset_top = 307.99997
-offset_right = 707.0
-offset_bottom = 486.49588
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.50200003
+anchor_top = 0.55
+anchor_right = 0.50200003
+anchor_bottom = 0.55
+offset_left = 177.39996
+offset_top = 109.99997
+offset_right = 305.39996
+offset_bottom = 288.49588
 rotation = 2.3490446
 
 [node name="FragmentSlider5" parent="." unique_id=757887381 instance=ExtResource("2_mu8pm")]
-layout_mode = 0
-offset_left = 342.0
-offset_top = 400.00003
-offset_right = 470.0
-offset_bottom = 578.496
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.50600004
+anchor_top = 0.558
+anchor_right = 0.50600004
+anchor_bottom = 0.558
+offset_left = -62.80005
+offset_top = 199.12003
+offset_right = 65.19995
+offset_bottom = 377.61597
 rotation = 3.7573087
 
 [node name="FragmentSlider6" parent="." unique_id=1874011463 instance=ExtResource("2_mu8pm")]
-layout_mode = 0
-offset_left = 202.99997
-offset_top = 266.0
-offset_right = 330.99997
-offset_bottom = 444.49594
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.551
+anchor_right = 0.5
+anchor_bottom = 0.551
+offset_left = -197.00003
+offset_top = 67.64
+offset_right = -69.00003
+offset_bottom = 246.13594
 rotation = 4.6941643
 
 [connection signal="fragment_selected" from="FragmentSlider1" to="." method="_on_fragment_slider_1_fragment_selected"]
