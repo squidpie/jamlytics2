@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://b7ueenm4uk4lx" path="res://assets/img/core_icon.png" id="1_0dkrt"]
 [ext_resource type="Script" uid="uid://cgjrhxg3jx86j" path="res://ui/main_menu/main_menu.gd" id="1_omy8q"]
 [ext_resource type="PackedScene" uid="uid://b837j5nuudocn" path="res://ui/main_menu/fragment_slider.tscn" id="2_mu8pm"]
+[ext_resource type="Texture2D" uid="uid://cng1qsoxdbhud" path="res://icon.svg" id="3_3c04x"]
+[ext_resource type="Script" uid="uid://c4hpvia21m30u" path="res://ui/main_menu/core_icon.gd" id="3_i5wg5"]
 
 [node name="MainMenu" type="Control" unique_id=26582682]
 layout_mode = 3
@@ -11,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_behavior_recursive = 2
 script = ExtResource("1_omy8q")
 
 [node name="BackgroundFill" type="ColorRect" parent="." unique_id=320723059]
@@ -22,7 +25,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.09869913, 0.06660893, 0.023399318, 1)
 
-[node name="CoreIcon" type="TextureRect" parent="." unique_id=889546923]
+[node name="CoreIcon" type="TextureButton" parent="." unique_id=252455210]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -35,7 +38,10 @@ offset_right = 65.0
 offset_bottom = 74.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_0dkrt")
+disabled = true
+texture_normal = ExtResource("1_0dkrt")
+texture_disabled = ExtResource("3_3c04x")
+script = ExtResource("3_i5wg5")
 
 [node name="FragmentSlider1" parent="." unique_id=1074475101 instance=ExtResource("2_mu8pm")]
 layout_mode = 0

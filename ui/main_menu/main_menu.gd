@@ -11,27 +11,28 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	pass
 
+func update(level: int, passed: bool) -> void:
+	var slider:VSlider = get_node("FragmentSlider" + str(level))
+	if passed:
+		$CoreIcon.update(level)
+		slider.hide()
+	else:
+		slider.value = slider.max_value
 
 func _on_fragment_slider_1_fragment_selected() -> void:
 	emit_signal("load_level", [1])
-	hide()
 
 func _on_fragment_slider_2_fragment_selected() -> void:
 	emit_signal("load_level", [2])
-	hide()
 
 func _on_fragment_slider_3_fragment_selected() -> void:
 	emit_signal("load_level", [3])
-	hide()
 
 func _on_fragment_slider_4_fragment_selected() -> void:
 	emit_signal("load_level", [4])
-	hide()
 
 func _on_fragment_slider_5_fragment_selected() -> void:
 	emit_signal("load_level", [5])
-	hide()
 
 func _on_fragment_slider_6_fragment_selected() -> void:
 	emit_signal("load_level", [6])
-	hide()
