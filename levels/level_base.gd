@@ -31,10 +31,6 @@ func complete_level() -> void:
 	emit_signal("level_complete", [level, passed])
 
 
-func _on_exit_pressed() -> void:
-	print("kill screen")
-
-
 func _on_label_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		passed = true

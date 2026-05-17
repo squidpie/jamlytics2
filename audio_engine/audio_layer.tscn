@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://du18x6a4qttbx"]
+
+[ext_resource type="Script" uid="uid://ego066shtwmi" path="res://audio_engine/audio_layer.gd" id="1_ewi1x"]
+
+[node name="AudioLayer" type="AudioStreamPlayer" unique_id=1917159568]
+script = ExtResource("1_ewi1x")

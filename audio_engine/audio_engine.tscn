@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://can8sfds6gsal"]
+
+[ext_resource type="Script" uid="uid://dfa2two4j537l" path="res://audio_engine/audio_engine.gd" id="1_n5h64"]
+[ext_resource type="Script" uid="uid://6pd4gi3bhk0i" path="res://audio_engine/layer_loop_player.gd" id="2_r1rco"]
+
+[node name="AudioEngine" type="Node" unique_id=298749642]
+script = ExtResource("1_n5h64")
+
+[node name="MainLoopPlayer" type="AudioStreamPlayer" parent="." unique_id=574358715]
+
+[node name="LayerLoopPlayer" type="Node" parent="." unique_id=491817047]
+script = ExtResource("2_r1rco")

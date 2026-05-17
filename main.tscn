@@ -2,11 +2,14 @@
 
 [ext_resource type="Script" uid="uid://cn0qtlvrecif8" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://cy3isnhpf4r1p" path="res://ui/main_menu/main_menu.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://can8sfds6gsal" path="res://audio_engine/audio_engine.tscn" id="2_lquwl"]
 [ext_resource type="PackedScene" uid="uid://c3kxmh6y300wn" path="res://ui/HUD/hud.tscn" id="3_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://dm6tcjsgd0cap" path="res://level_loader.tscn" id="3_h2yge"]
 
 [node name="Main" type="Node" unique_id=2036140677]
 script = ExtResource("1_ig7tw")
+
+[node name="AudioEngine" parent="." unique_id=298749642 instance=ExtResource("2_lquwl")]
 
 [node name="LevelLoader" parent="." unique_id=665489537 instance=ExtResource("3_h2yge")]
 
