@@ -24,5 +24,6 @@ func _on_child_finished() -> void:
 			all_done = true
 		else:
 			all_done = false
+			break
 	if all_done:
 		finished.emit()

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dnmiv2ulxbpil"]
+
+[ext_resource type="Texture2D" uid="uid://cw0d88tvluxgv" path="res://assets/img/fragment_icon.png" id="1_4yxrt"]
+
+[node name="PlayerFragment" type="RigidBody2D" unique_id=813238106]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1965343193]
+polygon = PackedVector2Array(-48, 41, 2, -64, 52, 39, 1, 25)
+
+[node name="TextureRect" type="TextureRect" parent="CollisionPolygon2D" unique_id=195388587]
+offset_left = -63.0
+offset_top = -71.0
+offset_right = 65.0
+offset_bottom = 57.0
+mouse_filter = 0
+mouse_behavior_recursive = 2
+texture = ExtResource("1_4yxrt")
+metadata/_edit_use_anchors_ = true

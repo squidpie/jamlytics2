@@ -3,6 +3,7 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$Player.hide()
 	$HUD.hide()
 	$AudioEngine.start_loop("main_theme")
 
@@ -23,6 +24,9 @@ func _on_level_load_complete() -> void:
 	level.level_complete.connect(_on_level_complete)
 	$AudioEngine.load_layer(str(level.level))
 	$AudioEngine.start_layer()
+	$Player.freeze()
+	$Player.reset()
+	$Player.show()
 
 
 func _on_level_complete(args) -> void:
@@ -35,3 +39,6 @@ func _on_level_complete(args) -> void:
 	if not passed:
 		$AudioEngine.unload_last_layer()
 	$AudioEngine.start_loop("main_theme")
+	$Player.hide()
+	if passed:
+		$Player.update(level)
