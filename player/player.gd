@@ -5,10 +5,11 @@ var launched = false
 var is_resetting = false
 var reset_position = Vector2.ZERO
 var diff_position = Vector2.ZERO
+var distance = 0
 var last_window_size = Vector2.ZERO
 
 var LAUNCHER_RELATIVE_POSITION = Vector2(0.75, 0.25)
-var PLAYER_VELOCITY_FACTOR = 1500
+var PLAYER_VELOCITY_FACTOR = 10
 
 
 # Called when the node enters the scene tree for the first time.
@@ -17,6 +18,7 @@ func _ready() -> void:
 	freeze()
 	$PlayerCore.input_event.connect(_on_player_core_input_event)
 	$PlayerCore/VisibleOnScreenNotifier2D.screen_exited.connect(_on_player_exit_screen)
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
@@ -41,6 +43,7 @@ func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 	if dragging:
 		var player_position = $PlayerCore.global_transform.origin
 		diff_position = reset_position - player_position
+		distance = player_position.distance_to(reset_position)
 
 	if launched:
 		var player_mass = $PlayerCore.mass
@@ -49,8 +52,9 @@ func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 			if child_mass != null:
 				player_mass += child_mass
 		var linear_velocity = diff_position.normalized() *  \
-							  PLAYER_VELOCITY_FACTOR * \
-							  player_mass
+							  distance * \
+							  player_mass *\
+							  PLAYER_VELOCITY_FACTOR
 		var rotation = $PlayerCore.rotation
 		var delta = 1 / state.get_step()
 		var angular_velocity = (linear_velocity.angle() - rotation) * delta
