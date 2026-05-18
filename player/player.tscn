@@ -2,40 +2,42 @@
 
 [ext_resource type="Script" uid="uid://bjtgq4tyqmld6" path="res://player/player.gd" id="1_g1dw6"]
 [ext_resource type="PackedScene" uid="uid://7tqsc5cnf0b4" path="res://player/player_core.tscn" id="1_oul6g"]
+[ext_resource type="Script" uid="uid://d0j8bmvdqc0yo" path="res://player/player_core.gd" id="3_g1dw6"]
 
 [node name="Player" type="Node" unique_id=29706633]
 script = ExtResource("1_g1dw6")
 
 [node name="PlayerCore" parent="." unique_id=1924811212 instance=ExtResource("1_oul6g")]
-position = Vector2(147, 63)
+position = Vector2(418, 188)
 input_pickable = true
 freeze_mode = 1
+script = ExtResource("3_g1dw6")
 
 [node name="Fragment1Marker2D" type="Marker2D" parent="PlayerCore" unique_id=816251145]
-position = Vector2(-51, -66)
+position = Vector2(-42, -53)
 rotation = -0.6335545
 
 [node name="Fragment2Marker2D" type="Marker2D" parent="PlayerCore" unique_id=1281450094]
-position = Vector2(55, -72)
+position = Vector2(38, -52)
 rotation = 0.69552624
 scale = Vector2(0.99999994, 0.99999994)
 
 [node name="Fragment3Marker2D" type="Marker2D" parent="PlayerCore" unique_id=857973454]
-position = Vector2(84, -10)
+position = Vector2(62, 8.583069e-06)
 rotation = 1.5242085
 scale = Vector2(0.99999994, 0.99999994)
 
 [node name="Fragment4Marker2D" type="Marker2D" parent="PlayerCore" unique_id=804032992]
-position = Vector2(70, 45)
+position = Vector2(38, 58.000008)
 rotation = 2.1699245
 
 [node name="Fragment5Marker2D" type="Marker2D" parent="PlayerCore" unique_id=1047924227]
-position = Vector2(-31, 72)
+position = Vector2(-36, 53.000008)
 rotation = -2.7186334
 scale = Vector2(0.99999994, 0.99999994)
 
 [node name="Fragment6Marker2D" type="Marker2D" parent="PlayerCore" unique_id=1931889268]
-position = Vector2(-83, 7)
+position = Vector2(-66, 4.0000076)
 rotation = -1.6302723
 scale = Vector2(0.99999994, 0.99999994)
 

@@ -1,19 +1,30 @@
 extends Node
 
 var dragging = false
+var launched = false
 var is_resetting = false
-var reset_position = Vector2(150, 150)
+var reset_position = Vector2.ZERO
+var diff_position = Vector2.ZERO
+var last_window_size = Vector2.ZERO
+
+var LAUNCHER_RELATIVE_POSITION = Vector2(0.75, 0.25)
+var PLAYER_VELOCITY_FACTOR = 1500
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	last_window_size = Vector2(get_viewport().get_window().size)
 	freeze()
 	$PlayerCore.input_event.connect(_on_player_core_input_event)
-
+	$PlayerCore/VisibleOnScreenNotifier2D.screen_exited.connect(_on_player_exit_screen)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	pass
+	var window_size = Vector2(get_viewport().get_window().size)
+	reset_position = window_size * (Vector2.ONE - LAUNCHER_RELATIVE_POSITION)
+	if window_size != last_window_size:
+		last_window_size = window_size
+		is_resetting = true
 
 
 func _physics_process(_delta: float) -> void:
@@ -21,8 +32,32 @@ func _physics_process(_delta: float) -> void:
 		$PlayerCore.global_transform.origin = $PlayerCore.get_global_mouse_position()
 
 	if is_resetting:
+		freeze()
 		$PlayerCore.global_transform.origin = reset_position
 		is_resetting = false
+
+
+func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
+	if dragging:
+		var player_position = $PlayerCore.global_transform.origin
+		diff_position = reset_position - player_position
+		print(diff_position)
+
+	if launched:
+		var player_mass = $PlayerCore.mass
+		for child in $PlayerCore.get_children():
+			var child_mass = child.get("mass")
+			if child_mass != null:
+				player_mass += child_mass
+		var linear_velocity = diff_position.normalized() *  \
+							  PLAYER_VELOCITY_FACTOR * \
+							  player_mass
+		var rotation = $PlayerCore.rotation
+		var delta = 1 / state.get_step()
+		var angular_velocity = (linear_velocity.angle() - rotation) * delta
+		state.set_linear_velocity(linear_velocity)
+		state.set_angular_velocity(angular_velocity)
+		launched = false
 
 
 func hide() -> void:
@@ -70,8 +105,8 @@ func update(fragment_id: int) -> void:
 	$PlayerCore.add_child(joint)
 	
 	joint = PinJoint2D.new()
-	joint.node_b = $PlayerCore.get_path()
 	joint.node_a = fragment_instance.get_path()
+	joint.node_b = $PlayerCore.get_path()
 	joint.bias = 1
 	fragment_instance.add_child(joint)
 
@@ -81,3 +116,8 @@ func _on_player_core_input_event(_viewport: Node, event: InputEvent, _shape_idx:
 		dragging = event.pressed
 		if not event.pressed:
 			unfreeze()
+			launched = true
+
+
+func _on_player_exit_screen() -> void:
+	is_resetting = true

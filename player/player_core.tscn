@@ -1,16 +1,27 @@
 [gd_scene format=3 uid="uid://7tqsc5cnf0b4"]
 
+[ext_resource type="Texture2D" uid="uid://djntf1fuxcoyw" path="res://assets/img/core_icon_64x64.png" id="1_3m1w2"]
 [ext_resource type="Texture2D" uid="uid://b7ueenm4uk4lx" path="res://assets/img/core_icon.png" id="1_er7ww"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w6osu"]
-radius = 55.0
+radius = 29.017237
 
 [node name="PlayerCore" type="RigidBody2D" unique_id=1924811212]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1067068099]
 shape = SubResource("CircleShape2D_w6osu")
 
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1798268186]
+offset_left = -32.0
+offset_top = -34.0
+offset_right = 32.0
+offset_bottom = 30.0
+mouse_behavior_recursive = 2
+mouse_default_cursor_shape = 6
+texture = ExtResource("1_3m1w2")
+
 [node name="TextureRect" type="TextureRect" parent="." unique_id=166758556]
+visible = false
 offset_left = -65.0
 offset_top = -67.0
 offset_right = 63.0
@@ -19,3 +30,5 @@ mouse_behavior_recursive = 2
 mouse_default_cursor_shape = 6
 texture = ExtResource("1_er7ww")
 metadata/_edit_use_anchors_ = true
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=211130396]
