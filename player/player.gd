@@ -41,7 +41,6 @@ func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 	if dragging:
 		var player_position = $PlayerCore.global_transform.origin
 		diff_position = reset_position - player_position
-		print(diff_position)
 
 	if launched:
 		var player_mass = $PlayerCore.mass
