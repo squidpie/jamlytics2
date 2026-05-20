@@ -21,9 +21,3 @@ func load_level(level: int, shard_mask: int) -> void:
 	level_instance.level = level	
 	add_child(level_instance)
 	emit_signal("level_load_complete")
-
-
-func _on_main_menu_load_level(args) -> void:
-	pass
-	#var level = args[0]
-	#load_level(level)

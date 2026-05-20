@@ -1,6 +1,5 @@
 extends Control
 
-var ammo = null
 var shard_mask = 0b000000
 
 # Called when the node enters the scene tree for the first time.
@@ -26,8 +25,6 @@ func _ready() -> void:
 		shard_mask_copy >>= 1
 		index += 1
 
-func update(shard_index: int) -> void:
-	shard_mask |= 1 << (shard_index - 1)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:

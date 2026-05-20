@@ -37,11 +37,3 @@ func _on_level_complete(args) -> void:
 	$AudioEngine.start_loop("main_theme")
 	if passed:
 		shard_mask |= 1 << (level - 1)
-
-
-
-
-# TODO
-# make placeholder hand + arm art
-# program grabbing ammo sitting in hand, drag back and angle to calculate linear and angular velocity, release -> launch
-# program the core + shards to sit in a relative position, and select ammo by selecting shard/core, dynamic image depending on levels unlocked.

@@ -17,4 +17,3 @@ mouse_filter = 1
 
 [connection signal="level_load_complete" from="LevelLoader" to="." method="_on_level_load_complete"]
 [connection signal="load_level" from="MainMenu" to="." method="_on_main_menu_load_level"]
-[connection signal="load_level" from="MainMenu" to="LevelLoader" method="_on_main_menu_load_level"]

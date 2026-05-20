@@ -40,6 +40,8 @@ collision_mask = 2
 
 [node name="Anchor" type="StaticBody2D" parent="." unique_id=2052240572]
 position = Vector2(427, -8)
+collision_layer = 0
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anchor" unique_id=1162763535]
 position = Vector2(0, 1)

@@ -7,7 +7,7 @@ var diff_position = Vector2.ZERO
 var current_ammo = null
 
 var MAX_DRAG = 475
-var PLAYER_VELOCITY_FACTOR = 10
+var PLAYER_VELOCITY_FACTOR = 3
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
