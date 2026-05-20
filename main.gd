@@ -1,9 +1,9 @@
 extends Node
 
+var shard_mask = 0b000000
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	#$HUD.hide()
 	$AudioEngine.start_loop("main_theme")
 
 
@@ -12,10 +12,11 @@ func _process(_delta: float) -> void:
 	pass
 
 
-func _on_main_menu_load_level(_args) -> void:
-	$MainMenu.hide()
-	#$HUD.show()
+func _on_main_menu_load_level(args) -> void:
+	var level = args[0]
 	$AudioEngine.stop_loop()
+	$LevelLoader.load_level(level, shard_mask)
+	$MainMenu.hide()
 
 
 func _on_level_load_complete() -> void:
@@ -29,12 +30,13 @@ func _on_level_complete(args) -> void:
 	var level = args[0]
 	var passed = args[1]
 	$MainMenu.update(level, passed)
-	#$HUD.hide()
 	$MainMenu.show()
 	$AudioEngine.stop_layer()
 	if not passed:
 		$AudioEngine.unload_last_layer()
 	$AudioEngine.start_loop("main_theme")
+	if passed:
+		shard_mask |= 1 << (level - 1)
 
 
 

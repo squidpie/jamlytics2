@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dwr0k3k42urwc" path="res://levels/objects/launcher.gd" id="1_ax8fy"]
 [ext_resource type="PackedScene" uid="uid://lopcb5324k51" path="res://levels/objects/launcher_hand.tscn" id="1_q1nxb"]
 [ext_resource type="PackedScene" uid="uid://dfeufu74vh64h" path="res://levels/objects/launcher_arm.tscn" id="2_tb1aj"]
+[ext_resource type="PackedScene" uid="uid://dsb6h41bxs7oi" path="res://levels/objects/ammo_selector.tscn" id="4_aeei8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tb1aj"]
 
@@ -12,6 +13,7 @@ anchors_preset = 0
 script = ExtResource("1_ax8fy")
 
 [node name="LauncherHand" parent="." unique_id=12282379 instance=ExtResource("1_q1nxb")]
+position = Vector2(14, 229)
 collision_layer = 3
 collision_mask = 3
 
@@ -21,7 +23,7 @@ node_a = NodePath("..")
 node_b = NodePath("../../LowerArm")
 
 [node name="LowerArm" parent="." unique_id=781269525 instance=ExtResource("2_tb1aj")]
-position = Vector2(256, 0)
+position = Vector2(270, 229)
 collision_layer = 2
 collision_mask = 2
 
@@ -31,13 +33,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../UpperArm")
 
 [node name="UpperArm" parent="." unique_id=1733986054 instance=ExtResource("2_tb1aj")]
-position = Vector2(414.99997, -96.00001)
+position = Vector2(428.99997, 133.00003)
 rotation = -1.5742426
 collision_layer = 2
 collision_mask = 2
 
 [node name="Anchor" type="StaticBody2D" parent="." unique_id=2052240572]
-position = Vector2(413, -237)
+position = Vector2(427, -8)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anchor" unique_id=1162763535]
 position = Vector2(0, 1)
@@ -47,3 +49,14 @@ shape = SubResource("CircleShape2D_tb1aj")
 position = Vector2(0, 2)
 node_a = NodePath("..")
 node_b = NodePath("../../UpperArm")
+
+[node name="AmmoSelector" parent="." unique_id=1375343770 instance=ExtResource("4_aeei8")]
+layout_mode = 1
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 588.0
+offset_top = 3.0
+offset_right = 588.2
+offset_bottom = 3.0
+grow_horizontal = 0
+grow_vertical = 1

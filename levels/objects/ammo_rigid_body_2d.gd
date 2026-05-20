@@ -5,9 +5,11 @@ extends RigidBody2D
 func _ready() -> void:
 	pass # Replace with function body.
 
+
 func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 	get_parent()._integrate_forces(state)
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass

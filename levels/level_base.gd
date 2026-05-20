@@ -5,6 +5,12 @@ signal level_complete
 @export var level = 0
 var passed = false
 var HUD
+var shard_mask = 0b000000
+
+
+func _enter_tree() -> void:
+	$Launcher/AmmoSelector.shard_mask = shard_mask
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -23,11 +29,7 @@ func reset_level() -> void:
 
 
 func complete_level() -> void:
-	#$HUD/Exit.pressed.disconnect(complete_level)
-	#$HUD/Reset.pressed.disconnect(reset_level)
-	#var parent = find_parent("LevelLoader")
 	get_parent().remove_child(self)
-	#parent.remove_child(self)
 	emit_signal("level_complete", [level, passed])
 
 

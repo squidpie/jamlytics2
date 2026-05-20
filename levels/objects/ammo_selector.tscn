@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://dsb6h41bxs7oi"]
+
+[ext_resource type="Script" uid="uid://bbck7jcbsomxu" path="res://levels/objects/ammo_selector.gd" id="1_8ckia"]
+[ext_resource type="Texture2D" uid="uid://cuqek1y6fwbo7" path="res://assets/img/starCore_64px.png" id="2_xnsm7"]
+[ext_resource type="Texture2D" uid="uid://luaa0mvddsnx" path="res://assets/img/starShard1_64px.png" id="3_c7yjm"]
+[ext_resource type="Texture2D" uid="uid://qxvjfw5uqs4p" path="res://assets/img/starShard2_64px.png" id="4_mp7kp"]
+[ext_resource type="Texture2D" uid="uid://c0kiupcvxdjyi" path="res://assets/img/starShard3_64px.png" id="5_qajia"]
+[ext_resource type="Texture2D" uid="uid://cxmvpeyiseryc" path="res://assets/img/starShard4_64px.png" id="6_4mmvs"]
+[ext_resource type="Texture2D" uid="uid://1r4f6vetbksh" path="res://assets/img/starShard5_64px.png" id="7_4s2tx"]
+[ext_resource type="Texture2D" uid="uid://bvjeo0vgx8c7d" path="res://assets/img/starShard6_64px.png" id="8_jjmvx"]
+
+[node name="AmmoSelector" type="Control" unique_id=1375343770]
+layout_direction = 1
+layout_mode = 3
+anchor_right = 0.246
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_right = 0.19999695
+offset_bottom = -168.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ckia")
+
+[node name="Core" type="TextureButton" parent="." unique_id=1421640913]
+layout_mode = 0
+offset_left = 66.06091
+offset_top = 63.417267
+offset_right = 130.06091
+offset_bottom = 127.41727
+texture_normal = ExtResource("2_xnsm7")
+
+[node name="Shard1" type="TextureButton" parent="." unique_id=972428634]
+layout_mode = 0
+offset_left = 127.06091
+offset_top = 4.417282
+offset_right = 167.06091
+offset_bottom = 66.41728
+rotation = 0.48621374
+texture_normal = ExtResource("3_c7yjm")
+
+[node name="Shard2" type="TextureButton" parent="." unique_id=431269791]
+layout_mode = 0
+offset_left = 189.06094
+offset_top = 77.41728
+offset_right = 229.06091
+offset_bottom = 139.41728
+rotation = 1.5636997
+texture_normal = ExtResource("4_mp7kp")
+
+[node name="Shard3" type="TextureButton" parent="." unique_id=647982724]
+layout_mode = 0
+offset_left = 163.06085
+offset_top = 163.41724
+offset_right = 203.06082
+offset_bottom = 225.41724
+rotation = 2.4759755
+texture_normal = ExtResource("5_qajia")
+
+[node name="Shard4" type="TextureButton" parent="." unique_id=1885438207]
+layout_mode = 0
+offset_left = 59.060913
+offset_top = 181.4173
+offset_right = 99.06088
+offset_bottom = 243.4173
+rotation = 3.7303321
+texture_normal = ExtResource("6_4mmvs")
+
+[node name="Shard5" type="TextureButton" parent="." unique_id=124138857]
+layout_mode = 0
+offset_left = 4.060913
+offset_top = 113.41728
+offset_right = 44.060883
+offset_bottom = 175.41728
+rotation = 4.710866
+texture_normal = ExtResource("7_4s2tx")
+
+[node name="Shard6" type="TextureButton" parent="." unique_id=980393374]
+layout_mode = 0
+offset_left = 32.060852
+offset_top = 24.417252
+offset_right = 72.06082
+offset_bottom = 86.41725
+rotation = 5.6882777
+texture_normal = ExtResource("8_jjmvx")

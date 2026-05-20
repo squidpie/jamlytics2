@@ -13,15 +13,17 @@ func _process(_delta: float) -> void:
 	pass
 
 
-func load_level(level: int) -> void:
+func load_level(level: int, shard_mask: int) -> void:
 	print("Loading Level " + str(level))
 	var selected_level = load("res://levels/level_" + str(level) + ".tscn")
 	var level_instance = selected_level.instantiate()
+	level_instance.shard_mask = shard_mask
 	level_instance.level = level	
 	add_child(level_instance)
 	emit_signal("level_load_complete")
 
 
 func _on_main_menu_load_level(args) -> void:
-	var level = args[0]
-	load_level(level)
+	pass
+	#var level = args[0]
+	#load_level(level)
