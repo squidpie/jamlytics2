@@ -1,6 +1,7 @@
 extends Node
 
 signal level_complete
+signal level_reset
 
 @export var level = 0
 var passed = false
@@ -26,6 +27,8 @@ func _process(_delta: float) -> void:
 
 func reset_level() -> void:
 	print("Resetting Level")
+	level_reset.emit()
+	queue_free()
 
 
 func complete_level() -> void:

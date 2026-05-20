@@ -21,3 +21,14 @@ func load_level(level: int, shard_mask: int) -> void:
 	level_instance.level = level	
 	add_child(level_instance)
 	emit_signal("level_load_complete")
+
+
+func reload_level() -> Node:
+	var current_level = get_child(0)
+	var reloaded_level = load("res://levels/level_" + str(current_level.level) + ".tscn")
+	var reloaded_instance = reloaded_level.instantiate()
+	reloaded_instance.shard_mask = current_level.shard_mask
+	reloaded_instance.level = current_level.level
+	remove_child(current_level)
+	add_child(reloaded_instance)
+	return reloaded_instance

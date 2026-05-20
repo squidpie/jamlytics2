@@ -6,3 +6,9 @@
 
 [node name="Label" parent="." index="1" unique_id=674480825]
 text = ":: SILICON ::"
+
+[node name="Launcher" parent="." index="2" unique_id=499897539]
+offset_left = 22.0
+offset_top = 88.0
+offset_right = 22.0
+offset_bottom = 88.0
