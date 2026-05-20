@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dylyetyippchk"]
+
+[ext_resource type="Script" uid="uid://dwr0k3k42urwc" path="res://levels/objects/launcher.gd" id="1_ax8fy"]
+[ext_resource type="PackedScene" uid="uid://lopcb5324k51" path="res://levels/objects/launcher_hand.tscn" id="1_q1nxb"]
+[ext_resource type="PackedScene" uid="uid://dfeufu74vh64h" path="res://levels/objects/launcher_arm.tscn" id="2_tb1aj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tb1aj"]
+
+[node name="Launcher" type="Control" unique_id=2076772172]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ax8fy")
+
+[node name="LauncherHand" parent="." unique_id=12282379 instance=ExtResource("1_q1nxb")]
+collision_layer = 3
+collision_mask = 3
+
+[node name="PinJoint2D" type="PinJoint2D" parent="LauncherHand" unique_id=1783050907]
+position = Vector2(113, 15)
+node_a = NodePath("..")
+node_b = NodePath("../../LowerArm")
+
+[node name="LowerArm" parent="." unique_id=781269525 instance=ExtResource("2_tb1aj")]
+position = Vector2(256, 0)
+collision_layer = 2
+collision_mask = 2
+
+[node name="PinJoint2D" type="PinJoint2D" parent="LowerArm" unique_id=298331654]
+position = Vector2(117, 20)
+node_a = NodePath("..")
+node_b = NodePath("../../UpperArm")
+
+[node name="UpperArm" parent="." unique_id=1733986054 instance=ExtResource("2_tb1aj")]
+position = Vector2(414.99997, -96.00001)
+rotation = -1.5742426
+collision_layer = 2
+collision_mask = 2
+
+[node name="Anchor" type="StaticBody2D" parent="." unique_id=2052240572]
+position = Vector2(413, -237)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Anchor" unique_id=1162763535]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_tb1aj")
+
+[node name="DampedSpringJoint2D" type="PinJoint2D" parent="Anchor" unique_id=1900080484]
+position = Vector2(0, 2)
+node_a = NodePath("..")
+node_b = NodePath("../../UpperArm")

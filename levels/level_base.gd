@@ -8,9 +8,8 @@ var HUD
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	HUD = get_node("/root/Main/HUD")
-	HUD.get_child(1).pressed.connect(complete_level)
-	HUD.get_child(0).pressed.connect(reset_level)
+	$HUD/Exit.pressed.connect(complete_level)
+	$HUD/Reset.pressed.connect(reset_level)
 	print("loaded level " + str(level))
 
 
@@ -24,10 +23,11 @@ func reset_level() -> void:
 
 
 func complete_level() -> void:
-	HUD.get_child(1).pressed.disconnect(complete_level)
-	HUD.get_child(0).pressed.disconnect(reset_level)
-	var parent = find_parent("LevelLoader")
-	parent.remove_child(self)
+	#$HUD/Exit.pressed.disconnect(complete_level)
+	#$HUD/Reset.pressed.disconnect(reset_level)
+	#var parent = find_parent("LevelLoader")
+	get_parent().remove_child(self)
+	#parent.remove_child(self)
 	emit_signal("level_complete", [level, passed])
 
 

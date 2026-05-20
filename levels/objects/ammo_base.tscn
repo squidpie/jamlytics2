@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://1p2t8qxdd1gn"]
+
+[ext_resource type="Texture2D" uid="uid://cujjcpml1wd6o" path="res://assets/img/ammo_placeholder.svg" id="1_5xfvb"]
+[ext_resource type="Script" uid="uid://bwiio8k627h8w" path="res://levels/objects/ammo_base.gd" id="1_rcrt8"]
+[ext_resource type="Script" uid="uid://6w37crtp1tya" path="res://levels/objects/ammo_rigid_body_2d.gd" id="2_nxoot"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rcrt8"]
+radius = 22.0
+height = 54.0
+
+[node name="AmmoBase" type="Node2D" unique_id=420947838]
+script = ExtResource("1_rcrt8")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1335042170]
+script = ExtResource("2_nxoot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=914995303]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_rcrt8")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=608065490]
+texture = ExtResource("1_5xfvb")

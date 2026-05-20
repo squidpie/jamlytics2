@@ -3,7 +3,7 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$HUD.hide()
+	#$HUD.hide()
 	$AudioEngine.start_loop("main_theme")
 
 
@@ -14,7 +14,7 @@ func _process(_delta: float) -> void:
 
 func _on_main_menu_load_level(_args) -> void:
 	$MainMenu.hide()
-	$HUD.show()
+	#$HUD.show()
 	$AudioEngine.stop_loop()
 
 
@@ -29,9 +29,17 @@ func _on_level_complete(args) -> void:
 	var level = args[0]
 	var passed = args[1]
 	$MainMenu.update(level, passed)
-	$HUD.hide()
+	#$HUD.hide()
 	$MainMenu.show()
 	$AudioEngine.stop_layer()
 	if not passed:
 		$AudioEngine.unload_last_layer()
 	$AudioEngine.start_loop("main_theme")
+
+
+
+
+# TODO
+# make placeholder hand + arm art
+# program grabbing ammo sitting in hand, drag back and angle to calculate linear and angular velocity, release -> launch
+# program the core + shards to sit in a relative position, and select ammo by selecting shard/core, dynamic image depending on levels unlocked.
