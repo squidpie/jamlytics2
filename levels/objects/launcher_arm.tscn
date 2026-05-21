@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bd8641kdeqo8p" path="res://assets/img/launcher_arm_part.png" id="1_lrg28"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4uetw"]
-size = Vector2(256, 64)
+size = Vector2(128, 32)
 
 [node name="LauncherArm" type="RigidBody2D" unique_id=781269525]
 
@@ -11,4 +11,5 @@ size = Vector2(256, 64)
 shape = SubResource("RectangleShape2D_4uetw")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=441363927]
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_lrg28")

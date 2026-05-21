@@ -3,23 +3,24 @@
 [ext_resource type="Texture2D" uid="uid://by6lid3ncobcx" path="res://assets/img/launcher_hand.png" id="1_14y84"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14y84"]
-size = Vector2(128, 32)
+size = Vector2(96, 24)
 
 [node name="LauncherHand" type="AnimatableBody2D" unique_id=161338558]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=964084612]
-position = Vector2(64, 16)
+position = Vector2(48, 12)
 shape = SubResource("RectangleShape2D_14y84")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=725274454]
-position = Vector2(64, 16)
+position = Vector2(48, 12)
+scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_14y84")
 
 [node name="Control" type="Control" parent="." unique_id=12282379]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 128.0
-offset_bottom = 32.0
+offset_right = 97.0
+offset_bottom = 25.0
 
 [node name="AttachMarker2D" type="Marker2D" parent="." unique_id=497523350]
-position = Vector2(64, 9)
+position = Vector2(48, 5)

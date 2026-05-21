@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c3kxmh6y300wn"]
 
-[ext_resource type="Texture2D" uid="uid://277b8ytljrbd" path="res://assets/img/reset_icon.png" id="1_1e5it"]
-[ext_resource type="Texture2D" uid="uid://bgkyw887p0ber" path="res://assets/img/exit_icon.png" id="2_67cnd"]
+[ext_resource type="Texture2D" uid="uid://bupthdfinrpcg" path="res://assets/img/refresh_64px.png" id="1_1e5it"]
+[ext_resource type="Texture2D" uid="uid://cknwa7wpjdsod" path="res://assets/img/cross_64px.png" id="2_67cnd"]
 
 [node name="HUD" type="Control" unique_id=523159167]
 top_level = true

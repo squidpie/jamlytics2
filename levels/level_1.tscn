@@ -8,7 +8,7 @@
 text = ":: SILICON ::"
 
 [node name="Launcher" parent="." index="2" unique_id=499897539]
-offset_left = 22.0
-offset_top = 88.0
-offset_right = 22.0
-offset_bottom = 88.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0

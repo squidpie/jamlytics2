@@ -7,12 +7,13 @@ var diff_position = Vector2.ZERO
 var current_ammo = null
 
 var MAX_DRAG = 475
-var PLAYER_VELOCITY_FACTOR = 3
+var PLAYER_VELOCITY_FACTOR = 4
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$LauncherHand/Control.gui_input.connect(_on_gui_input)
 	reload(load('res://levels/objects/ammo_0.tscn'))
+
 
 func _process(_delta: float) -> void:
 	if dragging:

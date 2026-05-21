@@ -13,33 +13,34 @@ anchors_preset = 0
 script = ExtResource("1_ax8fy")
 
 [node name="LauncherHand" parent="." unique_id=12282379 instance=ExtResource("1_q1nxb")]
-position = Vector2(14, 229)
+position = Vector2(17, 179)
 collision_layer = 3
 collision_mask = 3
 
 [node name="PinJoint2D" type="PinJoint2D" parent="LauncherHand" unique_id=1783050907]
-position = Vector2(113, 15)
+position = Vector2(106, 18)
 node_a = NodePath("..")
 node_b = NodePath("../../LowerArm")
 
 [node name="LowerArm" parent="." unique_id=781269525 instance=ExtResource("2_tb1aj")]
-position = Vector2(270, 229)
+position = Vector2(146.00002, 246.00002)
+rotation = 1.2255869
 collision_layer = 2
 collision_mask = 2
 
 [node name="PinJoint2D" type="PinJoint2D" parent="LowerArm" unique_id=298331654]
-position = Vector2(117, 20)
+position = Vector2(60, -2)
 node_a = NodePath("..")
 node_b = NodePath("../../UpperArm")
 
 [node name="UpperArm" parent="." unique_id=1733986054 instance=ExtResource("2_tb1aj")]
-position = Vector2(428.99997, 133.00003)
+position = Vector2(172.99994, 243)
 rotation = -1.5742426
 collision_layer = 2
 collision_mask = 2
 
 [node name="Anchor" type="StaticBody2D" parent="." unique_id=2052240572]
-position = Vector2(427, -8)
+position = Vector2(170, 155)
 collision_layer = 0
 collision_mask = 0
 
@@ -54,11 +55,12 @@ node_b = NodePath("../../UpperArm")
 
 [node name="AmmoSelector" parent="." unique_id=1375343770 instance=ExtResource("4_aeei8")]
 layout_mode = 1
+anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
-offset_left = 588.0
-offset_top = 3.0
-offset_right = 588.2
-offset_bottom = 3.0
-grow_horizontal = 0
+offset_left = 231.0
+offset_top = -3.0
+offset_right = 231.20001
+offset_bottom = -3.0
+grow_horizontal = 1
 grow_vertical = 1
