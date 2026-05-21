@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cjhxpgisf7iim" path="res://assets/img/adjustment_64px.png" id="10_4e78x"]
 [ext_resource type="Texture2D" uid="uid://bpjb0l0hgqjvn" path="res://assets/img/starShard5_128px.png" id="10_qao3l"]
 [ext_resource type="Texture2D" uid="uid://dn01t7qwuncus" path="res://assets/img/starShard6_128px.png" id="11_lknku"]
+[ext_resource type="PackedScene" uid="uid://cfx5j3l4igiqw" path="res://ui/settings_menu/config_menu.tscn" id="11_s4pem"]
 
 [node name="MainMenu" type="Control" unique_id=26582682]
 layout_mode = 3
@@ -136,6 +137,10 @@ offset_bottom = 64.0
 texture_normal = ExtResource("10_4e78x")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="ConfigMenu" parent="." unique_id=958251782 instance=ExtResource("11_s4pem")]
+visible = false
+layout_mode = 1
 
 [connection signal="pressed" from="CoreIcon" to="." method="_on_core_button_press"]
 [connection signal="fragment_selected" from="ShardSlider1" to="." method="_on_shard_slider_1_shard_selected"]

@@ -11,11 +11,19 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	pass
 
+
+func set_volume(value: float) -> void:
+	for player in get_children():
+		player.volume_db = value
+
+
 func connect_child(node: AudioStreamPlayer) -> void:
 	node.finished.connect(_on_child_finished)
 
+
 func disconnect_child(node: AudioStreamPlayer) -> void:
 	node.finished.disconnect(_on_child_finished)
+
 
 func _on_child_finished() -> void:
 	var all_done = false

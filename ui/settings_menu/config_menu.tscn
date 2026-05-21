@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://cfx5j3l4igiqw"]
+
+[ext_resource type="Script" uid="uid://fsmxk71pl7w1" path="res://ui/settings_menu/config_menu.gd" id="1_dbcni"]
+[ext_resource type="Texture2D" uid="uid://cknwa7wpjdsod" path="res://assets/img/cross_64px.png" id="2_d4jvc"]
+[ext_resource type="Texture2D" uid="uid://bupthdfinrpcg" path="res://assets/img/refresh_64px.png" id="3_qagpv"]
+
+[node name="ConfigMenu" type="Control" unique_id=958251782]
+layout_mode = 3
+anchor_left = 0.20400001
+anchor_right = 0.726
+anchor_bottom = 1.0
+offset_left = -0.2000122
+offset_right = 1.2000122
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dbcni")
+
+[node name="BackgroundFill" type="ColorRect" parent="." unique_id=1012200668]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.28974146, 0.28974146, 0.28974146, 1)
+
+[node name="CloseButton" type="TextureButton" parent="." unique_id=310359029]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -72.0
+offset_bottom = 72.0
+grow_horizontal = 0
+texture_normal = ExtResource("2_d4jvc")
+
+[node name="ResetButton" type="TextureButton" parent="." unique_id=847379966]
+layout_mode = 1
+offset_right = 72.0
+offset_bottom = 72.0
+texture_normal = ExtResource("3_qagpv")
+
+[node name="VolumeSlider" type="HSlider" parent="." unique_id=165601085]
+layout_mode = 1
+offset_left = 121.0
+offset_top = 106.0
+offset_right = 304.0
+offset_bottom = 152.0
+min_value = -10.0
+max_value = 5.0
+
+[node name="VolumeLabel" type="Label" parent="." unique_id=631710407]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 116.0
+offset_right = 85.0
+offset_bottom = 139.0
+text = "VOLUME"
+
+[node name="MuteCheckBox" type="CheckBox" parent="." unique_id=458859426]
+layout_mode = 0
+offset_left = 322.0
+offset_top = 115.0
+offset_right = 391.0
+offset_bottom = 146.0
+text = "Mute"
+
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="value_changed" from="VolumeSlider" to="." method="_on_volume_slider_value_changed"]
+[connection signal="toggled" from="MuteCheckBox" to="." method="_on_mute_check_box_toggled"]
