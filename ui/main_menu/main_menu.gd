@@ -11,28 +11,45 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	pass
 
+
 func update(level: int, passed: bool) -> void:
-	var slider:VSlider = get_node("FragmentSlider" + str(level))
+	if level > 6:
+		return
+	var slider:VSlider = get_node("ShardSlider" + str(level))
 	if passed:
 		$CoreIcon.update(level)
 		slider.hide()
 	else:
 		slider.value = slider.max_value
 
-func _on_fragment_slider_1_fragment_selected() -> void:
+
+func _on_shard_slider_1_shard_selected() -> void:
 	emit_signal("load_level", [1])
 
-func _on_fragment_slider_2_fragment_selected() -> void:
+
+func _on_shard_slider_2_shard_selected() -> void:
 	emit_signal("load_level", [2])
 
-func _on_fragment_slider_3_fragment_selected() -> void:
+
+func _on_shard_slider_3_shard_selected() -> void:
 	emit_signal("load_level", [3])
 
-func _on_fragment_slider_4_fragment_selected() -> void:
+
+func _on_shard_slider_4_shard_selected() -> void:
 	emit_signal("load_level", [4])
 
-func _on_fragment_slider_5_fragment_selected() -> void:
+
+func _on_shard_slider_5_shard_selected() -> void:
 	emit_signal("load_level", [5])
 
-func _on_fragment_slider_6_fragment_selected() -> void:
+
+func _on_shard_slider_6_shard_selected() -> void:
 	emit_signal("load_level", [6])
+
+
+func _on_core_button_press() -> void:
+	emit_signal("load_level", [7])
+
+
+func _on_config_button_pressed() -> void:
+	$ConfigMenu.show()

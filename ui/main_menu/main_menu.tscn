@@ -1,10 +1,15 @@
 [gd_scene format=3 uid="uid://cy3isnhpf4r1p"]
 
-[ext_resource type="Texture2D" uid="uid://b7ueenm4uk4lx" path="res://assets/img/core_icon.png" id="1_0dkrt"]
 [ext_resource type="Script" uid="uid://cgjrhxg3jx86j" path="res://ui/main_menu/main_menu.gd" id="1_omy8q"]
 [ext_resource type="PackedScene" uid="uid://b837j5nuudocn" path="res://ui/main_menu/fragment_slider.tscn" id="2_mu8pm"]
-[ext_resource type="Texture2D" uid="uid://cng1qsoxdbhud" path="res://icon.svg" id="3_3c04x"]
-[ext_resource type="Script" uid="uid://c4hpvia21m30u" path="res://ui/main_menu/core_icon.gd" id="3_i5wg5"]
+[ext_resource type="PackedScene" uid="uid://s5f7s2fenduo" path="res://ui/main_menu/core_icon.tscn" id="2_w2r0d"]
+[ext_resource type="Texture2D" uid="uid://gmrc6bewx0e7" path="res://assets/img/starShard1_128px.png" id="6_tf5ef"]
+[ext_resource type="Texture2D" uid="uid://cmx2vdmm8tqfx" path="res://assets/img/starShard2_128px.png" id="7_s4pem"]
+[ext_resource type="Texture2D" uid="uid://cj6objbhoq4tk" path="res://assets/img/starShard3_128px.png" id="8_xio0d"]
+[ext_resource type="Texture2D" uid="uid://dij2ik4gwnrpu" path="res://assets/img/starShard4_128px.png" id="9_tf5ef"]
+[ext_resource type="Texture2D" uid="uid://cjhxpgisf7iim" path="res://assets/img/adjustment_64px.png" id="10_4e78x"]
+[ext_resource type="Texture2D" uid="uid://bpjb0l0hgqjvn" path="res://assets/img/starShard5_128px.png" id="10_qao3l"]
+[ext_resource type="Texture2D" uid="uid://dn01t7qwuncus" path="res://assets/img/starShard6_128px.png" id="11_lknku"]
 
 [node name="MainMenu" type="Control" unique_id=26582682]
 layout_mode = 3
@@ -25,105 +30,118 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.09869913, 0.06660893, 0.023399318, 1)
 
-[node name="CoreIcon" type="TextureButton" parent="." unique_id=252455210]
+[node name="CoreIcon" parent="." unique_id=1336250084 instance=ExtResource("2_w2r0d")]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -63.0
-offset_top = -54.0
-offset_right = 65.0
-offset_bottom = 74.0
-grow_horizontal = 2
-grow_vertical = 2
-disabled = true
-texture_normal = ExtResource("1_0dkrt")
-texture_disabled = ExtResource("3_3c04x")
-script = ExtResource("3_i5wg5")
+offset_left = -65.0
+offset_top = -68.0
+offset_right = 63.0
+offset_bottom = 60.0
+grow_horizontal = 1
+grow_vertical = 1
 
-[node name="FragmentSlider1" parent="." unique_id=1074475101 instance=ExtResource("2_mu8pm")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.499
-anchor_top = 0.54700005
-anchor_right = 0.499
-anchor_bottom = 0.54700005
-offset_left = -164.20001
-offset_top = -128.92001
-offset_right = -36.200012
-offset_bottom = 49.575897
-rotation = -0.64808285
-
-[node name="FragmentSlider2" parent="." unique_id=1464066816 instance=ExtResource("2_mu8pm")]
+[node name="ShardSlider1" parent="." unique_id=1464066816 instance=ExtResource("2_mu8pm")]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.504
 anchor_top = 0.545
 anchor_right = 0.504
 anchor_bottom = 0.545
-offset_left = 83.79999
-offset_top = -203.20001
-offset_right = 211.79999
-offset_bottom = -24.704102
-rotation = 0.74206376
+offset_left = 78.1326
+offset_top = -229.93164
+offset_right = 206.13263
+offset_bottom = -51.43573
+rotation = 0.6847245
+theme_override_icons/grabber = ExtResource("6_tf5ef")
+theme_override_icons/grabber_highlight = ExtResource("6_tf5ef")
 
-[node name="FragmentSlider3" parent="." unique_id=1097243399 instance=ExtResource("2_mu8pm")]
+[node name="ShardSlider2" parent="." unique_id=1097243399 instance=ExtResource("2_mu8pm")]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.551
 anchor_right = 0.5
 anchor_bottom = 0.551
-offset_left = 210.0
-offset_top = -67.36
-offset_right = 338.0
-offset_bottom = 111.13591
+offset_left = 210.33264
+offset_top = -87.09164
+offset_right = 338.33264
+offset_bottom = 91.40428
 rotation = 1.5540926
+theme_override_icons/grabber = ExtResource("7_s4pem")
+theme_override_icons/grabber_highlight = ExtResource("7_s4pem")
 
-[node name="FragmentSlider4" parent="." unique_id=297734966 instance=ExtResource("2_mu8pm")]
+[node name="ShardSlider3" parent="." unique_id=297734966 instance=ExtResource("2_mu8pm")]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.50200003
 anchor_top = 0.55
 anchor_right = 0.50200003
 anchor_bottom = 0.55
-offset_left = 177.39996
-offset_top = 109.99997
-offset_right = 305.39996
-offset_bottom = 288.49588
-rotation = 2.3490446
+offset_left = 176.3999
+offset_top = 106.00006
+offset_right = 304.3999
+offset_bottom = 284.49597
+rotation = 2.4358132
+theme_override_icons/grabber = ExtResource("8_xio0d")
+theme_override_icons/grabber_highlight = ExtResource("8_xio0d")
 
-[node name="FragmentSlider5" parent="." unique_id=757887381 instance=ExtResource("2_mu8pm")]
+[node name="ShardSlider4" parent="." unique_id=757887381 instance=ExtResource("2_mu8pm")]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.50600004
 anchor_top = 0.558
 anchor_right = 0.50600004
 anchor_bottom = 0.558
-offset_left = -62.80005
-offset_top = 199.12003
-offset_right = 65.19995
-offset_bottom = 377.61597
+offset_left = -74.46741
+offset_top = 185.38837
+offset_right = 53.532593
+offset_bottom = 363.88428
 rotation = 3.7573087
+theme_override_icons/grabber = ExtResource("9_tf5ef")
+theme_override_icons/grabber_highlight = ExtResource("9_tf5ef")
 
-[node name="FragmentSlider6" parent="." unique_id=1874011463 instance=ExtResource("2_mu8pm")]
+[node name="ShardSlider5" parent="." unique_id=1874011463 instance=ExtResource("2_mu8pm")]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.551
 anchor_right = 0.5
 anchor_bottom = 0.551
-offset_left = -197.00003
-offset_top = 67.64
-offset_right = -69.00003
-offset_bottom = 246.13594
+offset_left = -209.66739
+offset_top = 47.90837
+offset_right = -81.66736
+offset_bottom = 226.40434
 rotation = 4.6941643
+theme_override_icons/grabber = ExtResource("10_qao3l")
+theme_override_icons/grabber_highlight = ExtResource("10_qao3l")
 
-[connection signal="fragment_selected" from="FragmentSlider1" to="." method="_on_fragment_slider_1_fragment_selected"]
-[connection signal="fragment_selected" from="FragmentSlider2" to="." method="_on_fragment_slider_2_fragment_selected"]
-[connection signal="fragment_selected" from="FragmentSlider3" to="." method="_on_fragment_slider_3_fragment_selected"]
-[connection signal="fragment_selected" from="FragmentSlider4" to="." method="_on_fragment_slider_4_fragment_selected"]
-[connection signal="fragment_selected" from="FragmentSlider5" to="." method="_on_fragment_slider_5_fragment_selected"]
-[connection signal="fragment_selected" from="FragmentSlider6" to="." method="_on_fragment_slider_6_fragment_selected"]
+[node name="ShardSlider6" parent="." unique_id=1074475101 instance=ExtResource("2_mu8pm")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.499
+anchor_top = 0.54700005
+anchor_right = 0.499
+anchor_bottom = 0.54700005
+offset_left = -176.86731
+offset_top = -155.65164
+offset_right = -48.86737
+offset_bottom = 22.844269
+rotation = -0.64808285
+theme_override_icons/grabber = ExtResource("11_lknku")
+theme_override_icons/grabber_highlight = ExtResource("11_lknku")
+
+[node name="ConfigButton" type="TextureButton" parent="." unique_id=426969472]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture_normal = ExtResource("10_4e78x")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="CoreIcon" to="." method="_on_core_button_press"]
+[connection signal="fragment_selected" from="ShardSlider1" to="." method="_on_shard_slider_1_shard_selected"]
+[connection signal="fragment_selected" from="ShardSlider2" to="." method="_on_shard_slider_2_shard_selected"]
+[connection signal="fragment_selected" from="ShardSlider3" to="." method="_on_shard_slider_3_shard_selected"]
+[connection signal="fragment_selected" from="ShardSlider4" to="." method="_on_shard_slider_4_shard_selected"]
+[connection signal="fragment_selected" from="ShardSlider5" to="." method="_on_shard_slider_5_shard_selected"]
+[connection signal="fragment_selected" from="ShardSlider6" to="." method="_on_shard_slider_6_shard_selected"]
+[connection signal="pressed" from="ConfigButton" to="." method="_on_config_button_pressed"]

@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://s5f7s2fenduo"]
+
+[ext_resource type="Texture2D" uid="uid://b7ueenm4uk4lx" path="res://assets/img/core_icon.png" id="1_embc4"]
+[ext_resource type="Texture2D" uid="uid://2juojripm20f" path="res://assets/img/starCore_128px.png" id="2_hq73y"]
+[ext_resource type="Script" uid="uid://c4hpvia21m30u" path="res://ui/main_menu/core_icon.gd" id="3_xlese"]
+[ext_resource type="Texture2D" uid="uid://gmrc6bewx0e7" path="res://assets/img/starShard1_128px.png" id="4_gbi0b"]
+[ext_resource type="Texture2D" uid="uid://cmx2vdmm8tqfx" path="res://assets/img/starShard2_128px.png" id="5_4v7s7"]
+[ext_resource type="Texture2D" uid="uid://cj6objbhoq4tk" path="res://assets/img/starShard3_128px.png" id="6_wbrhn"]
+[ext_resource type="Texture2D" uid="uid://dij2ik4gwnrpu" path="res://assets/img/starShard4_128px.png" id="7_nmiyp"]
+[ext_resource type="Texture2D" uid="uid://bpjb0l0hgqjvn" path="res://assets/img/starShard5_128px.png" id="8_f2bpy"]
+[ext_resource type="Texture2D" uid="uid://dn01t7qwuncus" path="res://assets/img/starShard6_128px.png" id="9_k4r5a"]
+
+[node name="CoreIcon" type="TextureButton" unique_id=1336250084]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -68.66736
+offset_top = -73.731636
+offset_right = 59.33264
+offset_bottom = 54.26837
+grow_horizontal = 2
+grow_vertical = 2
+disabled = true
+texture_normal = ExtResource("1_embc4")
+texture_disabled = ExtResource("2_hq73y")
+script = ExtResource("3_xlese")
+
+[node name="Shard1" type="Sprite2D" parent="." unique_id=441785444]
+visible = false
+position = Vector2(127.66736, -44.26837)
+rotation = 0.50395566
+texture = ExtResource("4_gbi0b")
+
+[node name="Shard2" type="Sprite2D" parent="." unique_id=2024725211]
+visible = false
+position = Vector2(189.66736, 64.731636)
+rotation = 1.5615673
+texture = ExtResource("5_4v7s7")
+
+[node name="Shard3" type="Sprite2D" parent="." unique_id=271247728]
+visible = false
+position = Vector2(138.66736, 168.73163)
+rotation = 2.4040143
+texture = ExtResource("6_wbrhn")
+
+[node name="Shard4" type="Sprite2D" parent="." unique_id=609226202]
+visible = false
+position = Vector2(-6.3326416, 170.73158)
+rotation = 3.769273
+texture = ExtResource("7_nmiyp")
+
+[node name="Shard5" type="Sprite2D" parent="." unique_id=44311879]
+visible = false
+position = Vector2(-63.332638, 67.73164)
+rotation = 4.699686
+texture = ExtResource("8_f2bpy")
+
+[node name="Shard6" type="Sprite2D" parent="." unique_id=503408293]
+visible = false
+position = Vector2(-10.332634, -38.268364)
+rotation = 5.6718016
+texture = ExtResource("9_k4r5a")
