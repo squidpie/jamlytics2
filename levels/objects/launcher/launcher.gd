@@ -33,6 +33,7 @@ func _physics_process(delta: float) -> void:
 		
 		var angular_velocity = (linear_velocity.angle() - rotation) * delta
 		current_ammo.launch(linear_velocity, angular_velocity)
+		get_node('../HUD/Score').text = str(int(get_node('../HUD/Score').text) + 1)
 		launched = false
 
 

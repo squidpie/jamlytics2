@@ -34,7 +34,7 @@ func reset_level() -> void:
 
 func complete_level() -> void:
 	get_parent().remove_child(self)
-	emit_signal("level_complete", [level, passed])
+	emit_signal("level_complete", [level, passed, int($HUD/Score.text)])
 
 
 func _on_level_passed() -> void:

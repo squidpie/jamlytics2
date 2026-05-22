@@ -1,7 +1,7 @@
 extends Node
 
 var shard_mask = 0b000000
-
+var final_score = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -32,7 +32,8 @@ func _on_level_load_complete() -> void:
 func _on_level_complete(args) -> void:
 	var level = args[0]
 	var passed = args[1]
-	$MainMenu.update(level, passed)
+	var score = args[2]
+	$MainMenu.update(level, passed, score)
 	$MainMenu.show()
 	$AudioEngine.stop_layer()
 	$AudioEngine.start_loop("main_theme")
@@ -41,6 +42,8 @@ func _on_level_complete(args) -> void:
 		$CutsceneLoader.show_scene("shard_fuse_" + str(level))
 	elif passed and level == 7:
 		shard_mask = 0
+		final_score = $MainMenu/Score.text
+		$MainMenu/Score.text = "0"
 		$CutsceneLoader.show_scene("intro")
 		$CutsceneLoader.show_scene("splash_screen")
 		$CutsceneLoader.show_scene("credits")

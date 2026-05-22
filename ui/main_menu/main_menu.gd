@@ -12,14 +12,16 @@ func _process(_delta: float) -> void:
 	pass
 
 
-func update(level: int, passed: bool) -> void:
+func update(level: int, passed: bool, score: int) -> void:
 	if passed and level == 7:
+		$Score.text = str(int($Score.text) + score)
 		$CoreIcon.update(level)
 		reset()
 		return
 
 	var slider:VSlider = get_node("ShardSlider" + str(level))
 	if passed:
+		$Score.text = str(int($Score.text) + score)
 		$CoreIcon.update(level)
 		slider.hide()
 	else:
