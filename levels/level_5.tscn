@@ -11,13 +11,27 @@
 text = ":: CARBON ::"
 
 [node name="EnemyCarbon" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_r02ll")]
-position = Vector2(547, 237)
+position = Vector2(583, 207)
 
 [node name="CarbonBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_26h77")]
-position = Vector2(548, 275)
+position = Vector2(581, 275)
 
-[node name="CarbonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=1441501325 instance=ExtResource("4_1y5xd")]
-position = Vector2(597, 307)
+[node name="CarbonBlockLong3" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=1771506230 instance=ExtResource("3_26h77")]
+position = Vector2(532, 194)
+rotation = 1.5707964
 
-[node name="CarbonBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=1589422372 instance=ExtResource("4_1y5xd")]
-position = Vector2(499, 307)
+[node name="CarbonBlockLong4" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=1657840383 instance=ExtResource("3_26h77")]
+position = Vector2(630, 195)
+rotation = 1.5707964
+
+[node name="CarbonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="3" unique_id=1441501325 instance=ExtResource("4_1y5xd")]
+position = Vector2(630, 307)
+
+[node name="CarbonBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="4" unique_id=1589422372 instance=ExtResource("4_1y5xd")]
+position = Vector2(532, 307)
+
+[node name="CarbonBlockShort3" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="5" unique_id=473743769 instance=ExtResource("4_1y5xd")]
+position = Vector2(582, 242)
+
+[node name="CarbonBlockLong2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="6" unique_id=143043389 instance=ExtResource("3_26h77")]
+position = Vector2(581, 113)
