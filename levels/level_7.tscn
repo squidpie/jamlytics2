@@ -23,7 +23,7 @@
 text = ":: BOSS ::"
 
 [node name="EnemyIron" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_3igfe")]
-position = Vector2(611, 94)
+position = Vector2(638, 197)
 
 [node name="IronBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_sbxnr")]
 position = Vector2(461, 302)
@@ -44,7 +44,7 @@ position = Vector2(724, 306)
 position = Vector2(783, 304)
 
 [node name="HydrogenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="6" unique_id=2005228059 instance=ExtResource("9_3i5lu")]
-position = Vector2(611, 168)
+position = Vector2(641, 240)
 
 [node name="IronBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="7" unique_id=951537168 instance=ExtResource("10_k2juo")]
 position = Vector2(491, 269)
@@ -56,13 +56,16 @@ position = Vector2(623, 268)
 position = Vector2(757, 270)
 
 [node name="HeliumBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="10" unique_id=1975217816 instance=ExtResource("13_1wdt6")]
-position = Vector2(550, 235)
+position = Vector2(555, 190)
+rotation = 1.5707964
 
 [node name="OxygenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="11" unique_id=720503342 instance=ExtResource("14_3t2fq")]
-position = Vector2(684, 232)
+position = Vector2(689, 187)
+rotation = 1.5707964
 
 [node name="SiliconBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="12" unique_id=1409760245 instance=ExtResource("15_qyu3j")]
-position = Vector2(617, 200)
+position = Vector2(618, 107)
 
 [node name="HydrogenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="13" unique_id=1567411924 instance=ExtResource("16_64gf8")]
-position = Vector2(616, 131)
+position = Vector2(457, 185)
+rotation = -1.5667155
