@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://jx4e4l4j2rnv"]
+
+[ext_resource type="PackedScene" uid="uid://dfb50k107oii1" path="res://levels/objects/blocks/block_base.tscn" id="1_tqgms"]
+[ext_resource type="Texture2D" uid="uid://b03tsnqny28vn" path="res://assets/img/block_long_c.svg" id="2_tqgms"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_seyvw"]
+size = Vector2(129, 32)
+
+[node name="CarbonBlockLong" unique_id=1060340984 instance=ExtResource("1_tqgms")]
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=114911891]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_seyvw")
+
+[node name="Sprite2D" parent="." index="1" unique_id=764468882]
+texture = ExtResource("2_tqgms")

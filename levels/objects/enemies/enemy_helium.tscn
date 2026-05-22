@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://b215ujthul0n4"]
+
+[ext_resource type="PackedScene" uid="uid://0443p2pedju8" path="res://levels/objects/enemies/enemy_base.tscn" id="1_18mst"]
+
+[node name="EnemyHelium" unique_id=1531186198 instance=ExtResource("1_18mst")]

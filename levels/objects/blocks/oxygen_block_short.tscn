@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c5tbn26ou5knw"]
+
+[ext_resource type="PackedScene" uid="uid://dfb50k107oii1" path="res://levels/objects/blocks/block_base.tscn" id="1_sb4hf"]
+[ext_resource type="Texture2D" uid="uid://dhodxh0ge4rhj" path="res://assets/img/block_square_o.svg" id="2_sb4hf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftgxe"]
+size = Vector2(32, 32)
+
+[node name="OxygenBlockShort" unique_id=1060340984 instance=ExtResource("1_sb4hf")]
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=114911891]
+shape = SubResource("RectangleShape2D_ftgxe")
+
+[node name="Sprite2D" parent="." index="1" unique_id=764468882]
+texture = ExtResource("2_sb4hf")

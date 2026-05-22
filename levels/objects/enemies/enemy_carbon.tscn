@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://db1fgkd33sopq"]
+
+[ext_resource type="PackedScene" uid="uid://0443p2pedju8" path="res://levels/objects/enemies/enemy_base.tscn" id="1_84vos"]
+
+[node name="EnemyCarbon" unique_id=1531186198 instance=ExtResource("1_84vos")]

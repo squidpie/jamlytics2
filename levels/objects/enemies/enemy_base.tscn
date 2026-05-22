@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://0443p2pedju8"]
+
+[ext_resource type="Texture2D" uid="uid://cujjcpml1wd6o" path="res://assets/img/ammo_placeholder.svg" id="1_m3m5j"]
+[ext_resource type="Script" uid="uid://buw7eag50gv7n" path="res://levels/objects/enemies/enemy_base.gd" id="1_sgead"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sgead"]
+radius = 20.995296
+height = 56.02639
+
+[node name="EnemyBase" type="RigidBody2D" unique_id=1531186198]
+contact_monitor = true
+max_contacts_reported = 2
+script = ExtResource("1_sgead")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1137571285]
+rotation = 1.575289
+shape = SubResource("CapsuleShape2D_sgead")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1640460370]
+texture = ExtResource("1_m3m5j")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1322286352]
+rect = Rect2(-25, -22, 50, 43)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

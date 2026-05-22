@@ -1,8 +1,23 @@
 [gd_scene format=3 uid="uid://dhwnvv0eqjqj1"]
 
 [ext_resource type="PackedScene" uid="uid://itx4nwmo0fqw" path="res://levels/level_base.tscn" id="1_vkd0v"]
+[ext_resource type="PackedScene" uid="uid://cnhhf88mkscrf" path="res://levels/objects/enemies/enemy_silicon.tscn" id="2_bmgug"]
+[ext_resource type="PackedScene" uid="uid://yjrjkykdy4ht" path="res://levels/objects/blocks/silicon_block_long.tscn" id="3_20opy"]
+[ext_resource type="PackedScene" uid="uid://k7m26arrst5" path="res://levels/objects/blocks/silicon_block_short.tscn" id="4_8l0e1"]
 
 [node name="LevelBase" unique_id=748981199 instance=ExtResource("1_vkd0v")]
 
 [node name="Label" parent="." index="1" unique_id=674480825]
-text = ":: NEON ::"
+text = ":: SILICON ::"
+
+[node name="EnemySilicon" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_bmgug")]
+position = Vector2(575, 227)
+
+[node name="SiliconBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_20opy")]
+position = Vector2(577, 274)
+
+[node name="SiliconBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=611711207 instance=ExtResource("4_8l0e1")]
+position = Vector2(531, 305)
+
+[node name="SiliconBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=1493634446 instance=ExtResource("4_8l0e1")]
+position = Vector2(624, 306)

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dsb6h41bxs7oi"]
 
-[ext_resource type="Script" uid="uid://bbck7jcbsomxu" path="res://levels/objects/ammo_selector.gd" id="1_8ckia"]
+[ext_resource type="Script" uid="uid://bbck7jcbsomxu" path="res://levels/objects/launcher/ammo_selector.gd" id="1_8ckia"]
 [ext_resource type="Texture2D" uid="uid://cuqek1y6fwbo7" path="res://assets/img/starCore_64px.png" id="2_xnsm7"]
 [ext_resource type="Texture2D" uid="uid://luaa0mvddsnx" path="res://assets/img/starShard1_64px.png" id="3_c7yjm"]
 [ext_resource type="Texture2D" uid="uid://qxvjfw5uqs4p" path="res://assets/img/starShard2_64px.png" id="4_mp7kp"]

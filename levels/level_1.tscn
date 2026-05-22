@@ -1,14 +1,29 @@
 [gd_scene format=3 uid="uid://8iv7tf2htilx"]
 
 [ext_resource type="PackedScene" uid="uid://itx4nwmo0fqw" path="res://levels/level_base.tscn" id="1_vn7o3"]
+[ext_resource type="PackedScene" uid="uid://bsw1j4a1m8w76" path="res://levels/objects/enemies/enemy_hydrogen.tscn" id="2_kx6l7"]
+[ext_resource type="PackedScene" uid="uid://duf7sy0f7fei8" path="res://levels/objects/blocks/hydrogen_block_long.tscn" id="3_n46q3"]
+[ext_resource type="PackedScene" uid="uid://fnpum50r6ta3" path="res://levels/objects/blocks/hydrogen_block_short.tscn" id="4_btoec"]
 
 [node name="LevelBase" unique_id=748981199 instance=ExtResource("1_vn7o3")]
 
 [node name="Label" parent="." index="1" unique_id=674480825]
-text = ":: SILICON ::"
+text = ":: HYDROGEN ::"
 
 [node name="Launcher" parent="." index="2" unique_id=499897539]
 offset_left = 0.0
-offset_top = 0.0
+offset_top = -360.0
 offset_right = 0.0
-offset_bottom = 0.0
+offset_bottom = -360.0
+
+[node name="EnemyHydrogen" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_kx6l7")]
+position = Vector2(664, 233)
+
+[node name="HydrogenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_n46q3")]
+position = Vector2(663, 272)
+
+[node name="HydrogenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=628650819 instance=ExtResource("4_btoec")]
+position = Vector2(623, 305)
+
+[node name="HydrogenBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=908263831 instance=ExtResource("4_btoec")]
+position = Vector2(709, 307)

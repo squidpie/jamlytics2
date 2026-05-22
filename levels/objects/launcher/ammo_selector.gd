@@ -32,28 +32,28 @@ func _process(_delta: float) -> void:
 
 
 func _on_core_button_pressed() -> void:
-	get_parent().reload(load('res://levels/objects/ammo_0.tscn'))
+	get_parent().reload(load('res://levels/objects/launcher/ammo_0.tscn'))
 
 
 func _on_shard_1_button_pressed() -> void:
-	get_parent().reload(load('res://levels/objects/ammo_1.tscn'))
+	get_parent().reload(load('res://levels/objects/launcher/ammo_1.tscn'))
 
 
 func _on_shard_2_button_pressed() -> void:
-	get_parent().reload(load('res://levels/objects/ammo_2.tscn'))
+	get_parent().reload(load('res://levels/objects/launcher/ammo_2.tscn'))
 
 
 func _on_shard_3_button_pressed() -> void:
-	get_parent().reload(load('res://levels/objects/ammo_3.tscn'))
+	get_parent().reload(load('res://levels/objects/launcher/ammo_3.tscn'))
 
 
 func _on_shard_4_button_pressed() -> void:
-	get_parent().reload(load('res://levels/objects/ammo_4.tscn'))
+	get_parent().reload(load('res://levels/objects/launcher/ammo_4.tscn'))
 
 
 func _on_shard_5_button_pressed() -> void:
-	get_parent().reload(load('res://levels/objects/ammo_5.tscn'))
+	get_parent().reload(load('res://levels/objects/launcher/ammo_5.tscn'))
 
 
 func _on_shard_6_button_pressed() -> void:
-	get_parent().reload(load('res://levels/objects/ammo_6.tscn'))
+	get_parent().reload(load('res://levels/objects/launcher/ammo_6.tscn'))

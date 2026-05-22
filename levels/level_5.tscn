@@ -1,8 +1,23 @@
 [gd_scene format=3 uid="uid://fqmtaqueonvg"]
 
 [ext_resource type="PackedScene" uid="uid://itx4nwmo0fqw" path="res://levels/level_base.tscn" id="1_erq1u"]
+[ext_resource type="PackedScene" uid="uid://db1fgkd33sopq" path="res://levels/objects/enemies/enemy_carbon.tscn" id="2_r02ll"]
+[ext_resource type="PackedScene" uid="uid://jx4e4l4j2rnv" path="res://levels/objects/blocks/carbon_block_long.tscn" id="3_26h77"]
+[ext_resource type="PackedScene" uid="uid://gxsvnhsmb4i4" path="res://levels/objects/blocks/carbon_block_short.tscn" id="4_1y5xd"]
 
 [node name="LevelBase" unique_id=748981199 instance=ExtResource("1_erq1u")]
 
 [node name="Label" parent="." index="1" unique_id=674480825]
-text = ":: HELIUM ::"
+text = ":: CARBON ::"
+
+[node name="EnemyCarbon" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_r02ll")]
+position = Vector2(547, 237)
+
+[node name="CarbonBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_26h77")]
+position = Vector2(548, 275)
+
+[node name="CarbonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=1441501325 instance=ExtResource("4_1y5xd")]
+position = Vector2(597, 307)
+
+[node name="CarbonBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=1589422372 instance=ExtResource("4_1y5xd")]
+position = Vector2(499, 307)

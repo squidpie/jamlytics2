@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cnhhf88mkscrf"]
+
+[ext_resource type="PackedScene" uid="uid://0443p2pedju8" path="res://levels/objects/enemies/enemy_base.tscn" id="1_rfyg3"]
+[ext_resource type="Texture2D" uid="uid://cpmp1otkpudo6" path="res://assets/img/si_head.svg" id="2_ahf1u"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ahf1u"]
+radius = 30.999687
+height = 66.00832
+
+[node name="EnemySilicon" unique_id=1531186198 instance=ExtResource("1_rfyg3")]
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=1137571285]
+shape = SubResource("CapsuleShape2D_ahf1u")
+
+[node name="Sprite2D" parent="." index="1" unique_id=1640460370]
+texture = ExtResource("2_ahf1u")

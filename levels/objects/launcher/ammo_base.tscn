@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://1p2t8qxdd1gn"]
 
 [ext_resource type="Texture2D" uid="uid://cujjcpml1wd6o" path="res://assets/img/ammo_placeholder.svg" id="1_5xfvb"]
-[ext_resource type="Script" uid="uid://bwiio8k627h8w" path="res://levels/objects/ammo_base.gd" id="1_rcrt8"]
-[ext_resource type="Script" uid="uid://6w37crtp1tya" path="res://levels/objects/ammo_rigid_body_2d.gd" id="2_nxoot"]
+[ext_resource type="Script" uid="uid://bwiio8k627h8w" path="res://levels/objects/launcher/ammo_base.gd" id="1_rcrt8"]
+[ext_resource type="Script" uid="uid://6w37crtp1tya" path="res://levels/objects/launcher/ammo_rigid_body_2d.gd" id="2_nxoot"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rcrt8"]
 radius = 22.0

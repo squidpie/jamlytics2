@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dylyetyippchk"]
 
-[ext_resource type="Script" uid="uid://dwr0k3k42urwc" path="res://levels/objects/launcher.gd" id="1_ax8fy"]
-[ext_resource type="PackedScene" uid="uid://lopcb5324k51" path="res://levels/objects/launcher_hand.tscn" id="1_q1nxb"]
-[ext_resource type="PackedScene" uid="uid://dfeufu74vh64h" path="res://levels/objects/launcher_arm.tscn" id="2_tb1aj"]
-[ext_resource type="PackedScene" uid="uid://dsb6h41bxs7oi" path="res://levels/objects/ammo_selector.tscn" id="4_aeei8"]
+[ext_resource type="Script" uid="uid://dwr0k3k42urwc" path="res://levels/objects/launcher/launcher.gd" id="1_ax8fy"]
+[ext_resource type="PackedScene" uid="uid://lopcb5324k51" path="res://levels/objects/launcher/launcher_hand.tscn" id="1_q1nxb"]
+[ext_resource type="PackedScene" uid="uid://dfeufu74vh64h" path="res://levels/objects/launcher/launcher_arm.tscn" id="2_tb1aj"]
+[ext_resource type="PackedScene" uid="uid://dsb6h41bxs7oi" path="res://levels/objects/launcher/ammo_selector.tscn" id="4_aeei8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tb1aj"]
 
@@ -41,8 +41,8 @@ collision_mask = 2
 
 [node name="Anchor" type="StaticBody2D" parent="." unique_id=2052240572]
 position = Vector2(170, 155)
-collision_layer = 0
-collision_mask = 0
+collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anchor" unique_id=1162763535]
 position = Vector2(0, 1)

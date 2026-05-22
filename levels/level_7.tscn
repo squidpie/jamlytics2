@@ -1,8 +1,68 @@
 [gd_scene format=3 uid="uid://cv5i16gprn40q"]
 
 [ext_resource type="PackedScene" uid="uid://itx4nwmo0fqw" path="res://levels/level_base.tscn" id="1_jm8gk"]
+[ext_resource type="PackedScene" uid="uid://bsb2xhyeg840l" path="res://levels/objects/enemies/enemy_iron.tscn" id="2_3igfe"]
+[ext_resource type="PackedScene" uid="uid://cjr37v2enseu0" path="res://levels/objects/blocks/iron_block_short.tscn" id="3_sbxnr"]
+[ext_resource type="PackedScene" uid="uid://oj8sc5k75ici" path="res://levels/objects/blocks/neon_block_short.tscn" id="4_xp58y"]
+[ext_resource type="PackedScene" uid="uid://gxsvnhsmb4i4" path="res://levels/objects/blocks/carbon_block_short.tscn" id="5_ieh1o"]
+[ext_resource type="PackedScene" uid="uid://bfyrfff2qow4u" path="res://levels/objects/blocks/helium_block_short.tscn" id="6_ydmfm"]
+[ext_resource type="PackedScene" uid="uid://c5tbn26ou5knw" path="res://levels/objects/blocks/oxygen_block_short.tscn" id="7_nwhq7"]
+[ext_resource type="PackedScene" uid="uid://k7m26arrst5" path="res://levels/objects/blocks/silicon_block_short.tscn" id="8_02co5"]
+[ext_resource type="PackedScene" uid="uid://fnpum50r6ta3" path="res://levels/objects/blocks/hydrogen_block_short.tscn" id="9_3i5lu"]
+[ext_resource type="PackedScene" uid="uid://d2wvmq6dkpwfm" path="res://levels/objects/blocks/iron_block_long.tscn" id="10_k2juo"]
+[ext_resource type="PackedScene" uid="uid://cokyoqxbwrla4" path="res://levels/objects/blocks/neon_block_long.tscn" id="11_epelm"]
+[ext_resource type="PackedScene" uid="uid://jx4e4l4j2rnv" path="res://levels/objects/blocks/carbon_block_long.tscn" id="12_lpckt"]
+[ext_resource type="PackedScene" uid="uid://cslfljwibufki" path="res://levels/objects/blocks/helium_block_long.tscn" id="13_1wdt6"]
+[ext_resource type="PackedScene" uid="uid://e4pb2cciqt35" path="res://levels/objects/blocks/oxygen_block_long.tscn" id="14_3t2fq"]
+[ext_resource type="PackedScene" uid="uid://yjrjkykdy4ht" path="res://levels/objects/blocks/silicon_block_long.tscn" id="15_qyu3j"]
+[ext_resource type="PackedScene" uid="uid://duf7sy0f7fei8" path="res://levels/objects/blocks/hydrogen_block_long.tscn" id="16_64gf8"]
 
 [node name="LevelBase" unique_id=748981199 instance=ExtResource("1_jm8gk")]
 
 [node name="Label" parent="." index="1" unique_id=674480825]
 text = ":: BOSS ::"
+
+[node name="EnemyIron" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_3igfe")]
+position = Vector2(611, 94)
+
+[node name="IronBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_sbxnr")]
+position = Vector2(461, 302)
+
+[node name="NeonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=129819466 instance=ExtResource("4_xp58y")]
+position = Vector2(528, 302)
+
+[node name="CarbonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=823068764 instance=ExtResource("5_ieh1o")]
+position = Vector2(590, 304)
+
+[node name="HeliumBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="3" unique_id=1630813234 instance=ExtResource("6_ydmfm")]
+position = Vector2(656, 304)
+
+[node name="OxygenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="4" unique_id=1929132011 instance=ExtResource("7_nwhq7")]
+position = Vector2(724, 306)
+
+[node name="SiliconBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="5" unique_id=1104957927 instance=ExtResource("8_02co5")]
+position = Vector2(783, 304)
+
+[node name="HydrogenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="6" unique_id=2005228059 instance=ExtResource("9_3i5lu")]
+position = Vector2(611, 168)
+
+[node name="IronBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="7" unique_id=951537168 instance=ExtResource("10_k2juo")]
+position = Vector2(491, 269)
+
+[node name="NeonBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="8" unique_id=1201458969 instance=ExtResource("11_epelm")]
+position = Vector2(623, 268)
+
+[node name="CarbonBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="9" unique_id=562362293 instance=ExtResource("12_lpckt")]
+position = Vector2(757, 270)
+
+[node name="HeliumBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="10" unique_id=1975217816 instance=ExtResource("13_1wdt6")]
+position = Vector2(550, 235)
+
+[node name="OxygenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="11" unique_id=720503342 instance=ExtResource("14_3t2fq")]
+position = Vector2(684, 232)
+
+[node name="SiliconBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="12" unique_id=1409760245 instance=ExtResource("15_qyu3j")]
+position = Vector2(617, 200)
+
+[node name="HydrogenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="13" unique_id=1567411924 instance=ExtResource("16_64gf8")]
+position = Vector2(616, 131)

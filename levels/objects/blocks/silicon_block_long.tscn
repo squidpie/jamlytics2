@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://yjrjkykdy4ht"]
+
+[ext_resource type="PackedScene" uid="uid://dfb50k107oii1" path="res://levels/objects/blocks/block_base.tscn" id="1_seyvw"]
+[ext_resource type="Texture2D" uid="uid://d2e6w87qlterx" path="res://assets/img/block_long_si.svg" id="2_q8pxi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_seyvw"]
+size = Vector2(128, 32)
+
+[node name="SiliconBlockLong" unique_id=1060340984 instance=ExtResource("1_seyvw")]
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=114911891]
+shape = SubResource("RectangleShape2D_seyvw")
+
+[node name="Sprite2D" parent="." index="1" unique_id=764468882]
+texture = ExtResource("2_q8pxi")

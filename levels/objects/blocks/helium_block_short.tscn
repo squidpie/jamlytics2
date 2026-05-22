@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bfyrfff2qow4u"]
+
+[ext_resource type="PackedScene" uid="uid://dfb50k107oii1" path="res://levels/objects/blocks/block_base.tscn" id="1_553li"]
+[ext_resource type="Texture2D" uid="uid://71y4botqqcoo" path="res://assets/img/block_square_he.svg" id="2_553li"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftgxe"]
+size = Vector2(32, 32)
+
+[node name="HeliumBlockShort" unique_id=1060340984 instance=ExtResource("1_553li")]
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=114911891]
+shape = SubResource("RectangleShape2D_ftgxe")
+
+[node name="Sprite2D" parent="." index="1" unique_id=764468882]
+texture = ExtResource("2_553li")

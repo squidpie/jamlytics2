@@ -17,6 +17,7 @@ func _enter_tree() -> void:
 func _ready() -> void:
 	$HUD/Exit.pressed.connect(complete_level)
 	$HUD/Reset.pressed.connect(reset_level)
+	$Structure/Enemies.get_child(0).enemy_died.connect(_on_level_passed)
 	print("loaded level " + str(level))
 
 
@@ -36,7 +37,13 @@ func complete_level() -> void:
 	emit_signal("level_complete", [level, passed])
 
 
+func _on_level_passed() -> void:
+	passed = true
+	complete_level()
+
+
 func _on_label_gui_input(event: InputEvent) -> void:
-	if event is InputEventMouseButton:
-		passed = true
-		complete_level()
+	pass
+	#if event is InputEventMouseButton:
+		#passed = true
+		#complete_level()

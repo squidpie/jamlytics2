@@ -1,8 +1,23 @@
 [gd_scene format=3 uid="uid://cb874aic1ju8d"]
 
 [ext_resource type="PackedScene" uid="uid://itx4nwmo0fqw" path="res://levels/level_base.tscn" id="1_mi4ay"]
+[ext_resource type="PackedScene" uid="uid://coq8vaa6ntu23" path="res://levels/objects/enemies/enemy_oxygen.tscn" id="2_pqqg8"]
+[ext_resource type="PackedScene" uid="uid://e4pb2cciqt35" path="res://levels/objects/blocks/oxygen_block_long.tscn" id="3_v5uil"]
+[ext_resource type="PackedScene" uid="uid://c5tbn26ou5knw" path="res://levels/objects/blocks/oxygen_block_short.tscn" id="4_5722l"]
 
 [node name="LevelBase" unique_id=748981199 instance=ExtResource("1_mi4ay")]
 
 [node name="Label" parent="." index="1" unique_id=674480825]
 text = ":: OXYGEN ::"
+
+[node name="EnemyOxygen" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_pqqg8")]
+position = Vector2(570, 233)
+
+[node name="OxygenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_v5uil")]
+position = Vector2(575, 271)
+
+[node name="OxygenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=778910335 instance=ExtResource("4_5722l")]
+position = Vector2(621, 305)
+
+[node name="OxygenBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=1492713877 instance=ExtResource("4_5722l")]
+position = Vector2(527, 306)
