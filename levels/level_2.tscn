@@ -11,13 +11,26 @@
 text = ":: OXYGEN ::"
 
 [node name="EnemyOxygen" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_pqqg8")]
-position = Vector2(570, 233)
+position = Vector2(644, 229)
 
 [node name="OxygenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_v5uil")]
-position = Vector2(575, 271)
+position = Vector2(494, 257)
+rotation = 1.5707964
 
-[node name="OxygenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=778910335 instance=ExtResource("4_5722l")]
-position = Vector2(621, 305)
+[node name="OxygenBlockLong2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=1371869016 instance=ExtResource("3_v5uil")]
+position = Vector2(633, 270)
 
-[node name="OxygenBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=1492713877 instance=ExtResource("4_5722l")]
-position = Vector2(527, 306)
+[node name="OxygenBlockLong3" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=1386084795 instance=ExtResource("3_v5uil")]
+position = Vector2(536, 171)
+
+[node name="OxygenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="3" unique_id=778910335 instance=ExtResource("4_5722l")]
+position = Vector2(676, 303)
+
+[node name="OxygenBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="4" unique_id=1492713877 instance=ExtResource("4_5722l")]
+position = Vector2(583, 303)
+
+[node name="OxygenBlockShort3" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="5" unique_id=1754142529 instance=ExtResource("4_5722l")]
+position = Vector2(582, 236)
+
+[node name="OxygenBlockShort4" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="6" unique_id=206827964 instance=ExtResource("4_5722l")]
+position = Vector2(582, 203)
