@@ -39,7 +39,12 @@ func complete_level() -> void:
 
 func _on_level_passed() -> void:
 	passed = true
+	await get_tree().create_timer(2).timeout
 	complete_level()
+
+
+func _on_label_timer_expire() -> void:
+	$Label/AnimationPlayer.play("level_load_text")
 
 
 func _on_label_gui_input(event: InputEvent) -> void:
