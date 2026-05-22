@@ -11,13 +11,26 @@
 text = ":: NEON ::"
 
 [node name="EnemyNeon" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_qskt5")]
-position = Vector2(518, 238)
+position = Vector2(693, 196)
 
 [node name="NeonBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_8tsbn")]
-position = Vector2(515, 277)
+position = Vector2(694, 235)
 
-[node name="NeonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=1495147859 instance=ExtResource("4_rqsg2")]
-position = Vector2(468, 310)
+[node name="NeonBlockLong3" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=1456256682 instance=ExtResource("3_8tsbn")]
+position = Vector2(578, 175)
 
-[node name="NeonBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=1407309248 instance=ExtResource("4_rqsg2")]
-position = Vector2(562, 310)
+[node name="NeonBlockLong2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=2039491075 instance=ExtResource("3_8tsbn")]
+position = Vector2(525, 256)
+rotation = 1.5707964
+
+[node name="NeonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="3" unique_id=1495147859 instance=ExtResource("4_rqsg2")]
+position = Vector2(645, 303)
+
+[node name="NeonBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="4" unique_id=1407309248 instance=ExtResource("4_rqsg2")]
+position = Vector2(646, 268)
+
+[node name="NeonBlockShort3" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="5" unique_id=657079681 instance=ExtResource("4_rqsg2")]
+position = Vector2(739, 306)
+
+[node name="NeonBlockShort4" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="6" unique_id=415011371 instance=ExtResource("4_rqsg2")]
+position = Vector2(740, 271)
