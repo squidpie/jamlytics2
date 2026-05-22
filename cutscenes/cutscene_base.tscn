@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cwixutcjr740c"]
+
+[ext_resource type="Script" uid="uid://bbqs27yp4efks" path="res://cutscenes/cutscene_base.gd" id="1_grhpx"]
+
+[node name="CutsceneBase" type="Control" unique_id=1673344090]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_grhpx")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

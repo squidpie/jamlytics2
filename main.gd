@@ -2,9 +2,12 @@ extends Node
 
 var shard_mask = 0b000000
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$AudioEngine.start_loop("main_theme")
+	$CutsceneLoader.show_scene("intro")
+	$CutsceneLoader.show_scene("splash_screen")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -33,8 +36,15 @@ func _on_level_complete(args) -> void:
 	$MainMenu.show()
 	$AudioEngine.stop_layer()
 	$AudioEngine.start_loop("main_theme")
-	if passed:
+	if passed and level < 7:
 		shard_mask |= 1 << (level - 1)
+		$CutsceneLoader.show_scene("shard_fuse_" + str(level))
+	elif passed and level == 7:
+		shard_mask = 0
+		$CutsceneLoader.show_scene("intro")
+		$CutsceneLoader.show_scene("splash_screen")
+		$CutsceneLoader.show_scene("credits")
+		$CutsceneLoader.show_scene("victory")
 	else:
 		$AudioEngine.unload_last_layer()
 

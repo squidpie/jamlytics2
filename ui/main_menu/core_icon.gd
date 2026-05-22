@@ -15,6 +15,9 @@ func _process(_delta: float) -> void:
 
 func update(level: int) -> void:
 	print("Generating new core image")
+	if level == 7:
+		reset()
+		return
 	passed_mask |= 1 << (level - 1)
 	var passed_mask_copy = passed_mask
 	var index = 1
@@ -27,3 +30,10 @@ func update(level: int) -> void:
 	if passed_mask == mask:
 		print("Enabling Core")
 		disabled = false
+
+
+func reset() -> void:
+	passed_mask = 0
+	disabled = true
+	for i in range(1, 7):
+		get_node('Shard' + str(i)).hide()

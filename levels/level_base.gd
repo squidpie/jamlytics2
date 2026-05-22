@@ -43,7 +43,6 @@ func _on_level_passed() -> void:
 
 
 func _on_label_gui_input(event: InputEvent) -> void:
-	pass
-	#if event is InputEventMouseButton:
-		#passed = true
-		#complete_level()
+	if event is InputEventMouseButton and OS.has_feature("debug"):
+		passed = true
+		complete_level()

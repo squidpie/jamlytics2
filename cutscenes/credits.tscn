@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dtt7j8ylxd5u7"]
+
+[ext_resource type="PackedScene" uid="uid://cwixutcjr740c" path="res://cutscenes/cutscene_base.tscn" id="1_a814r"]
+[ext_resource type="Texture2D" uid="uid://deg2c8di44el5" path="res://assets/img/credits_godot.png" id="2_8vsrx"]
+[ext_resource type="Texture2D" uid="uid://cr6rfajrimnlp" path="res://assets/img/credits.png" id="3_8i5ww"]
+
+[node name="CutsceneBase" unique_id=1673344090 instance=ExtResource("1_a814r")]
+
+[node name="Sprite2D2" type="Sprite2D" parent="." index="0" unique_id=1448573777]
+position = Vector2(400, 180)
+texture = ExtResource("2_8vsrx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="1" unique_id=979828139]
+position = Vector2(400, 180)
+texture = ExtResource("3_8i5ww")

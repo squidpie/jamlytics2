@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bwyywgouuiw0d"]
+
+[ext_resource type="PackedScene" uid="uid://cwixutcjr740c" path="res://cutscenes/cutscene_base.tscn" id="1_1i8a1"]
+[ext_resource type="Texture2D" uid="uid://d005jk6d433qb" path="res://assets/img/cutscene_placeholder.png" id="2_mawvl"]
+
+[node name="CutsceneBase" unique_id=1673344090 instance=ExtResource("1_1i8a1")]
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="0" unique_id=858116164]
+position = Vector2(400, 180)
+texture = ExtResource("2_mawvl")

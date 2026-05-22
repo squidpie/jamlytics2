@@ -13,14 +13,24 @@ func _process(_delta: float) -> void:
 
 
 func update(level: int, passed: bool) -> void:
-	if level > 6:
+	if passed and level == 7:
+		$CoreIcon.update(level)
+		reset()
 		return
+
 	var slider:VSlider = get_node("ShardSlider" + str(level))
 	if passed:
 		$CoreIcon.update(level)
 		slider.hide()
 	else:
 		slider.value = slider.max_value
+
+
+func reset() -> void:
+	for i in range(1, 7):
+		var slider = get_node("ShardSlider" + str(i))
+		slider.value = slider.max_value
+		slider.show()
 
 
 func _on_shard_slider_1_shard_selected() -> void:
