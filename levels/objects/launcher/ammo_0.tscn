@@ -3,3 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://1p2t8qxdd1gn" path="res://levels/objects/launcher/ammo_base.tscn" id="1_fjx1j"]
 
 [node name="AmmoBase" unique_id=420947838 instance=ExtResource("1_fjx1j")]
+
+[node name="RigidBody2D" parent="." index="0" unique_id=1335042170]
+mass = 5.0

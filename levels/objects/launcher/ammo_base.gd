@@ -6,7 +6,6 @@ var angular_velocity = 0
 var launched = false
 var mass = 0
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	mass = $RigidBody2D.mass

@@ -12,6 +12,8 @@ height = 54.0
 script = ExtResource("1_rcrt8")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1335042170]
+contact_monitor = true
+max_contacts_reported = 10
 script = ExtResource("2_nxoot")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=914995303]
@@ -20,3 +22,5 @@ shape = SubResource("CapsuleShape2D_rcrt8")
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=608065490]
 texture = ExtResource("1_5xfvb")
+
+[node name="Effect" type="Node2D" parent="RigidBody2D" unique_id=1634537745]

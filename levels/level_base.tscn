@@ -122,20 +122,10 @@ grow_vertical = 0
 
 [node name="HUD" parent="." unique_id=523159167 instance=ExtResource("3_vmt1o")]
 
-[node name="Structure" type="Control" parent="." unique_id=1513147391]
-layout_mode = 3
-anchor_left = 1.0
-anchor_top = 0.99200004
-anchor_right = 1.0
-anchor_bottom = 0.99200004
-offset_left = -403.0
-offset_top = -304.12003
-offset_bottom = -0.120025635
-grow_horizontal = 0
-grow_vertical = 2
-mouse_filter = 2
+[node name="Structure" type="Node" parent="." unique_id=142884278]
 
 [node name="Floor" type="StaticBody2D" parent="Structure" unique_id=1808281851]
+position = Vector2(398, 52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Structure/Floor" unique_id=1529630071]
 shape = SubResource("SegmentShape2D_vmt1o")
@@ -147,7 +137,7 @@ texture = ExtResource("4_da5si")
 
 [node name="Enemies" type="Node" parent="Structure" unique_id=427519716]
 
-[node name="Objects" type="Node" parent="Structure" unique_id=340698772]
+[node name="Objects" type="Node" parent="Structure" unique_id=1426496848]
 
 [node name="Label" type="Label" parent="." unique_id=674480825]
 anchors_preset = -1

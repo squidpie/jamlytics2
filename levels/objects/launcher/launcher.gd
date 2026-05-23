@@ -7,7 +7,7 @@ var diff_position = Vector2.ZERO
 var current_ammo = null
 
 var MAX_DRAG = 250
-var PLAYER_VELOCITY_FACTOR = 4
+var AMMO_VELOCITY_FACTOR = 4.5
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -27,9 +27,8 @@ func _process(_delta: float) -> void:
 func _physics_process(delta: float) -> void:
 	if launched:
 		var linear_velocity = diff_position.normalized() * \
-							  current_ammo.mass * \
 							  get_local_mouse_position().distance_to($Anchor.position) * \
-							  PLAYER_VELOCITY_FACTOR
+							  AMMO_VELOCITY_FACTOR
 		
 		var angular_velocity = (linear_velocity.angle() - rotation) * delta
 		current_ammo.launch(linear_velocity, angular_velocity)
