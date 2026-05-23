@@ -1,5 +1,17 @@
 [gd_scene format=3 uid="uid://dm35v1fn0w778"]
 
 [ext_resource type="PackedScene" uid="uid://1p2t8qxdd1gn" path="res://levels/objects/launcher/ammo_base.tscn" id="1_q8qkj"]
+[ext_resource type="Script" uid="uid://baf3eu57r5t1i" path="res://levels/objects/launcher/ammo_2_effect.gd" id="2_vqret"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2w4go"]
+radius = 139.17615
 
 [node name="AmmoBase" unique_id=420947838 instance=ExtResource("1_q8qkj")]
+
+[node name="Effect" parent="RigidBody2D" parent_id_path=PackedInt32Array(1335042170) index="2" unique_id=1634537745]
+script = ExtResource("2_vqret")
+
+[node name="Area2D" type="Area2D" parent="RigidBody2D/Effect" index="0" unique_id=787758362]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D/Effect/Area2D" index="0" unique_id=497509011]
+shape = SubResource("CircleShape2D_2w4go")

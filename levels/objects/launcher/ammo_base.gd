@@ -23,3 +23,9 @@ func launch(setter_linear_velocity: Vector2, setter_angular_velocity: float) -> 
 	angular_velocity = setter_angular_velocity
 	$RigidBody2D.freeze = false
 	launched = true
+
+
+func despawn() -> void:
+	var global_parent = find_parent("LauncherHand")
+	global_parent.get_parent().current_ammo = null
+	global_parent.call_deferred("remove_child", self)

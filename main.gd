@@ -1,6 +1,6 @@
 extends Node
 
-var shard_mask = 0b000001
+var shard_mask = 0b000000
 var final_score = ""
 
 # Called when the node enters the scene tree for the first time.
