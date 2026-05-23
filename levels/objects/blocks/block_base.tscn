@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://dfb50k107oii1"]
 
+[ext_resource type="Script" uid="uid://c3g7vktivrp1o" path="res://levels/objects/blocks/block_base.gd" id="1_4di7t"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_guy57"]
 
 [node name="BlockBase" type="RigidBody2D" unique_id=1060340984]
+script = ExtResource("1_4di7t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=114911891]
 shape = SubResource("RectangleShape2D_guy57")

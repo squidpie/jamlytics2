@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://1p2t8qxdd1gn" path="res://levels/objects/launcher/ammo_base.tscn" id="1_61t0m"]
 [ext_resource type="Texture2D" uid="uid://cpmp1otkpudo6" path="res://assets/img/si_head.svg" id="2_44vmy"]
+[ext_resource type="Script" uid="uid://byb2q1l3yg7cs" path="res://levels/objects/launcher/ammo_3_effect.gd" id="3_wgido"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_44vmy"]
 radius = 30.0
@@ -14,3 +15,9 @@ shape = SubResource("CapsuleShape2D_44vmy")
 
 [node name="Sprite2D" parent="RigidBody2D" parent_id_path=PackedInt32Array(1335042170) index="1" unique_id=608065490]
 texture = ExtResource("2_44vmy")
+
+[node name="Effect" parent="RigidBody2D" parent_id_path=PackedInt32Array(1335042170) index="2" unique_id=1634537745]
+script = ExtResource("3_wgido")
+
+[node name="RayCast2D" type="RayCast2D" parent="RigidBody2D/Effect" index="0" unique_id=640881283]
+target_position = Vector2(64, 33)

@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dylyetyippchk" path="res://levels/objects/launcher/launcher.tscn" id="2_nmr65"]
 [ext_resource type="PackedScene" uid="uid://c3kxmh6y300wn" path="res://ui/HUD/hud.tscn" id="3_vmt1o"]
 [ext_resource type="Texture2D" uid="uid://bd8641kdeqo8p" path="res://assets/img/launcher_arm_part.png" id="4_da5si"]
+[ext_resource type="Script" uid="uid://cgqxafrwokjho" path="res://levels/floor.gd" id="4_ep22m"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_vmt1o"]
 a = Vector2(38, 270)
@@ -126,6 +127,7 @@ grow_vertical = 0
 
 [node name="Floor" type="StaticBody2D" parent="Structure" unique_id=1808281851]
 position = Vector2(398, 52)
+script = ExtResource("4_ep22m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Structure/Floor" unique_id=1529630071]
 shape = SubResource("SegmentShape2D_vmt1o")
