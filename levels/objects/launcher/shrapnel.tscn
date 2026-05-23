@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ebqdw8nh0q1h"]
+
+[ext_resource type="Texture2D" uid="uid://cyy4xj1aqcxhv" path="res://assets/img/acute_triangle_64px.png" id="1_1ryfo"]
+[ext_resource type="Script" uid="uid://cicw3p8i76kv8" path="res://levels/objects/launcher/shrapnel.gd" id="1_68fnb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_68fnb"]
+size = Vector2(8, 10)
+
+[node name="Shrapnel" type="RigidBody2D" unique_id=897069049]
+collision_layer = 4
+collision_mask = 4
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("1_68fnb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=317807188]
+shape = SubResource("RectangleShape2D_68fnb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2080085378]
+position = Vector2(-2.3841858e-07, 0)
+scale = Vector2(0.21874999, 0.21874999)
+texture = ExtResource("1_1ryfo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

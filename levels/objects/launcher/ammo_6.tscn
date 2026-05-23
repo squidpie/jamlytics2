@@ -1,5 +1,11 @@
 [gd_scene format=3 uid="uid://brxq7sg36mknj"]
 
 [ext_resource type="PackedScene" uid="uid://1p2t8qxdd1gn" path="res://levels/objects/launcher/ammo_base.tscn" id="1_rxgv2"]
+[ext_resource type="Script" uid="uid://bbd61qpnhix87" path="res://levels/objects/launcher/ammo_6_effect.gd" id="2_b7v2j"]
 
 [node name="AmmoBase" unique_id=420947838 instance=ExtResource("1_rxgv2")]
+
+[node name="Effect" parent="RigidBody2D" parent_id_path=PackedInt32Array(1335042170) index="2" unique_id=1634537745]
+script = ExtResource("2_b7v2j")
+
+[connection signal="sleeping_state_changed" from="RigidBody2D" to="RigidBody2D/Effect" method="_on_rigid_body_2d_sleeping_state_changed"]
