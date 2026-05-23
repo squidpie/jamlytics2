@@ -2,4 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://1p2t8qxdd1gn" path="res://levels/objects/launcher/ammo_base.tscn" id="1_1vdti"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cefnw"]
+bounce = 0.75
+
 [node name="AmmoBase" unique_id=420947838 instance=ExtResource("1_1vdti")]
+
+[node name="RigidBody2D" parent="." index="0" unique_id=1335042170]
+physics_material_override = SubResource("PhysicsMaterial_cefnw")
