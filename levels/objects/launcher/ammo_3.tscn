@@ -3,10 +3,103 @@
 [ext_resource type="PackedScene" uid="uid://1p2t8qxdd1gn" path="res://levels/objects/launcher/ammo_base.tscn" id="1_61t0m"]
 [ext_resource type="Texture2D" uid="uid://cpmp1otkpudo6" path="res://assets/img/si_head.svg" id="2_44vmy"]
 [ext_resource type="Script" uid="uid://byb2q1l3yg7cs" path="res://levels/objects/launcher/ammo_3_effect.gd" id="3_wgido"]
+[ext_resource type="Texture2D" uid="uid://dfr06bupfxoi0" path="res://assets/img/1352.png" id="4_txo24"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_44vmy"]
 radius = 30.0
 height = 60.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kpul"]
+atlas = ExtResource("4_txo24")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_en0ci"]
+atlas = ExtResource("4_txo24")
+region = Rect2(64, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujh7u"]
+atlas = ExtResource("4_txo24")
+region = Rect2(128, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gevrc"]
+atlas = ExtResource("4_txo24")
+region = Rect2(192, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oc6xr"]
+atlas = ExtResource("4_txo24")
+region = Rect2(256, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f5a2c"]
+atlas = ExtResource("4_txo24")
+region = Rect2(320, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmfek"]
+atlas = ExtResource("4_txo24")
+region = Rect2(384, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n7yrk"]
+atlas = ExtResource("4_txo24")
+region = Rect2(448, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4riti"]
+atlas = ExtResource("4_txo24")
+region = Rect2(512, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ci8v"]
+atlas = ExtResource("4_txo24")
+region = Rect2(576, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5b325"]
+atlas = ExtResource("4_txo24")
+region = Rect2(640, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xq4e7"]
+atlas = ExtResource("4_txo24")
+region = Rect2(704, 192, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rr07j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6kpul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_en0ci")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujh7u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gevrc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oc6xr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f5a2c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmfek")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n7yrk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4riti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ci8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5b325")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xq4e7")
+}],
+"loop": true,
+"name": &"splash",
+"speed": 5.0
+}]
 
 [node name="AmmoBase" unique_id=420947838 instance=ExtResource("1_61t0m")]
 
@@ -21,3 +114,7 @@ script = ExtResource("3_wgido")
 
 [node name="RayCast2D" type="RayCast2D" parent="RigidBody2D/Effect" index="0" unique_id=640881283]
 target_position = Vector2(64, 33)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RigidBody2D/Effect" index="1" unique_id=393054337]
+sprite_frames = SubResource("SpriteFrames_rr07j")
+animation = &"splash"

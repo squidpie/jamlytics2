@@ -8,7 +8,6 @@ var activated = false
 func _ready() -> void:
 	pass
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	pass
@@ -18,7 +17,12 @@ func _on_rigid_body_2d_sleeping_state_changed() -> void:
 	if activated:
 		return
 	activated = true
+	$AnimatedSprite2D.play("explosion")
 	print("Triggering Ammo 1 Effect")
 	for target: RigidBody2D in $Area2D.get_overlapping_bodies():
 		target.apply_impulse(EFFECT_STRENGTH, get_parent().position)
-	find_parent("AmmoBase").despawn()
+	var ammo_parent = find_parent("AmmoBase")
+	$AnimatedSprite2D.reparent(ammo_parent)
+	get_parent().hide()
+	await get_tree().create_timer(1).timeout
+	ammo_parent.call_deferred("despawn")

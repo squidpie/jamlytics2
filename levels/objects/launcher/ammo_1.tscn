@@ -2,9 +2,102 @@
 
 [ext_resource type="PackedScene" uid="uid://1p2t8qxdd1gn" path="res://levels/objects/launcher/ammo_base.tscn" id="1_itu6h"]
 [ext_resource type="Script" uid="uid://cnkl23kuv1oaa" path="res://levels/objects/launcher/ammo_1_effect.gd" id="2_5se1j"]
+[ext_resource type="Texture2D" uid="uid://cvnbadfx7ryr0" path="res://assets/img/1373.png" id="3_onlsu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_onlsu"]
 radius = 56.22277
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmbi4"]
+atlas = ExtResource("3_onlsu")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fobqt"]
+atlas = ExtResource("3_onlsu")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4bop"]
+atlas = ExtResource("3_onlsu")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arxqb"]
+atlas = ExtResource("3_onlsu")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxx38"]
+atlas = ExtResource("3_onlsu")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6kgk"]
+atlas = ExtResource("3_onlsu")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrpd1"]
+atlas = ExtResource("3_onlsu")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0tn1l"]
+atlas = ExtResource("3_onlsu")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qjboi"]
+atlas = ExtResource("3_onlsu")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_llif3"]
+atlas = ExtResource("3_onlsu")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xssns"]
+atlas = ExtResource("3_onlsu")
+region = Rect2(640, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2nybx"]
+atlas = ExtResource("3_onlsu")
+region = Rect2(704, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5fkt2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmbi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fobqt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4bop")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arxqb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hxx38")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o6kgk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrpd1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0tn1l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qjboi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_llif3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xssns")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2nybx")
+}],
+"loop": true,
+"name": &"explosion",
+"speed": 5.0
+}]
 
 [node name="AmmoBase" unique_id=420947838 instance=ExtResource("1_itu6h")]
 
@@ -16,5 +109,10 @@ monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D/Effect/Area2D" index="0" unique_id=1243479337]
 shape = SubResource("CircleShape2D_onlsu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RigidBody2D/Effect" index="1" unique_id=1937127325]
+sprite_frames = SubResource("SpriteFrames_5fkt2")
+animation = &"explosion"
+frame_progress = 0.8460942
 
 [connection signal="sleeping_state_changed" from="RigidBody2D" to="RigidBody2D/Effect" method="_on_rigid_body_2d_sleeping_state_changed"]

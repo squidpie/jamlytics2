@@ -2,9 +2,123 @@
 
 [ext_resource type="PackedScene" uid="uid://1p2t8qxdd1gn" path="res://levels/objects/launcher/ammo_base.tscn" id="1_q8qkj"]
 [ext_resource type="Script" uid="uid://baf3eu57r5t1i" path="res://levels/objects/launcher/ammo_2_effect.gd" id="2_vqret"]
+[ext_resource type="Texture2D" uid="uid://doc2xodrw6c2v" path="res://assets/img/Effect_Charged_1_321x371.png" id="3_2w4go"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2w4go"]
 radius = 139.17615
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_itpqs"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(1926, 1113, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58vwx"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(0, 1484, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wk6ll"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(321, 1484, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhlse"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(642, 1484, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_luv3o"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(963, 1484, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uapxw"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(1284, 1484, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhfsp"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(1605, 1484, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7jwd2"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(1926, 1484, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nyfwi"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(0, 1855, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ruht"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(321, 1855, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41djt"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(642, 1855, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6e8p"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(963, 1855, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vp8p"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(1284, 1855, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_527ei"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(1605, 1855, 321, 371)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uug5s"]
+atlas = ExtResource("3_2w4go")
+region = Rect2(1926, 1855, 321, 371)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2c6m1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_itpqs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_58vwx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wk6ll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vhlse")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_luv3o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uapxw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vhfsp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7jwd2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nyfwi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ruht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41djt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r6e8p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vp8p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_527ei")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uug5s")
+}],
+"loop": true,
+"name": &"charged",
+"speed": 5.0
+}]
 
 [node name="AmmoBase" unique_id=420947838 instance=ExtResource("1_q8qkj")]
 
@@ -15,3 +129,8 @@ script = ExtResource("2_vqret")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D/Effect/Area2D" index="0" unique_id=497509011]
 shape = SubResource("CircleShape2D_2w4go")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RigidBody2D/Effect" index="1" unique_id=1301003380]
+sprite_frames = SubResource("SpriteFrames_2c6m1")
+animation = &"charged"
+frame_progress = 0.8558283
