@@ -13,10 +13,12 @@ var EFFECT_POWER = 10
 func _ready() -> void:
 	var parent: RigidBody2D = get_parent()
 	parent.body_entered.connect(_on_ammo_collision)
+	$AnimatedSprite2D.hide()
 
 
 func calcuate_damage() -> void:
 	print("Triggering Ammo 3 Effect")
+	$AnimatedSprite2D.show()
 	$AnimatedSprite2D.play("splash")
 	var ammo_parent = find_parent("AmmoBase")
 	get_parent().hide()

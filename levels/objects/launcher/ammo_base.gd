@@ -27,5 +27,8 @@ func launch(setter_linear_velocity: Vector2, setter_angular_velocity: float) -> 
 
 func despawn() -> void:
 	var global_parent = find_parent("LauncherHand")
+	for body: Node in $RigidBody2D.get_colliding_bodies():
+		if body.is_class('RigidBody2D'):
+			body.sleeping = false
 	global_parent.get_parent().current_ammo = null
 	global_parent.call_deferred("remove_child", self)

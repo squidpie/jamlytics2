@@ -8,7 +8,7 @@ var activated = false
 func _ready() -> void:
 	var parent: RigidBody2D = get_parent()
 	parent.body_entered.connect(_on_ammo_collision)
-
+	$AnimatedSprite2D.hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
@@ -18,6 +18,7 @@ func _process(_delta: float) -> void:
 func _on_ammo_collision(body: Node) -> void:
 	if activated or find_parent(body.name):
 		return
+	$AnimatedSprite2D.show()
 	$AnimatedSprite2D.play("charged")
 	var ammo_parent = find_parent("AmmoBase")
 	get_parent().hide()
