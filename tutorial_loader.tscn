@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c7rsxv4ojiuho"]
+
+[ext_resource type="Script" uid="uid://bkd1t6737ennv" path="res://tutorial_loader.gd" id="1_4geuv"]
+
+[node name="TutorialLoader" type="Node" unique_id=1759440931]
+script = ExtResource("1_4geuv")
+
+[node name="MainMenuTutorial" type="Node2D" parent="." unique_id=466645522]
+
+[node name="LauncherTutorial" type="Node2D" parent="." unique_id=470176648]
