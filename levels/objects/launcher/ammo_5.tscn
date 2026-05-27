@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ddxe45yca64cm"]
 
 [ext_resource type="PackedScene" uid="uid://1p2t8qxdd1gn" path="res://levels/objects/launcher/ammo_base.tscn" id="1_1vdti"]
+[ext_resource type="Texture2D" uid="uid://dl4vk2v3hpkk7" path="res://assets/img/c_head.svg" id="2_u3x7b"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cefnw"]
 bounce = 0.75
@@ -9,3 +10,6 @@ bounce = 0.75
 
 [node name="RigidBody2D" parent="." index="0" unique_id=1335042170]
 physics_material_override = SubResource("PhysicsMaterial_cefnw")
+
+[node name="Sprite2D" parent="RigidBody2D" index="1" unique_id=608065490]
+texture = ExtResource("2_u3x7b")

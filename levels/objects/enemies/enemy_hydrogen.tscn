@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://bsw1j4a1m8w76"]
 
 [ext_resource type="PackedScene" uid="uid://0443p2pedju8" path="res://levels/objects/enemies/enemy_base.tscn" id="1_tvf08"]
+[ext_resource type="Texture2D" uid="uid://be6xj4ul7vofq" path="res://assets/img/h_head.svg" id="2_wv16j"]
 
 [node name="EnemyHydrogen" unique_id=1531186198 instance=ExtResource("1_tvf08")]
+
+[node name="Sprite2D" parent="." index="1" unique_id=1640460370]
+texture = ExtResource("2_wv16j")

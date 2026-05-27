@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://s21aqlx86r6r"]
 
 [ext_resource type="PackedScene" uid="uid://0443p2pedju8" path="res://levels/objects/enemies/enemy_base.tscn" id="1_2uvm4"]
+[ext_resource type="Texture2D" uid="uid://dui0xc4eqb6bq" path="res://assets/img/ne_head.svg" id="2_6tr8x"]
 
 [node name="EnemyNeon" unique_id=1531186198 instance=ExtResource("1_2uvm4")]
+
+[node name="Sprite2D" parent="." index="1" unique_id=1640460370]
+texture = ExtResource("2_6tr8x")
