@@ -2,9 +2,12 @@ extends Node
 
 var shard_mask = 0b000000
 var final_score = ""
+var is_tutorial_active = false
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$MainMenu/ConfigMenu/PlayTutorialButton.pressed.connect(_on_play_tutorial_pressed)
 	$AudioEngine.start_loop("main_theme")
 	$CutsceneLoader.show_scene("intro")
 	$CutsceneLoader.show_scene("splash_screen")
@@ -20,11 +23,17 @@ func _on_main_menu_load_level(args) -> void:
 	$AudioEngine.stop_loop()
 	$LevelLoader.load_level(level, shard_mask)
 	$MainMenu.hide()
+	if is_tutorial_active:
+		$TutorialLoader/MainMenuTutorial.hide()
+		$TutorialLoader/LauncherTutorial.show()
 
 
 func _on_level_load_complete() -> void:
 	var level = $LevelLoader.get_child(0)
 	connect_level(level)
+	if is_tutorial_active:
+		level.ammo_launched.connect($TutorialLoader._on_ammo_launched)
+		level.reloaded.connect($TutorialLoader._on_reloaded)
 	$AudioEngine.load_layer(str(level.level))
 	$AudioEngine.start_layer()
 
@@ -37,6 +46,9 @@ func _on_level_complete(args) -> void:
 	$MainMenu.show()
 	$AudioEngine.stop_layer()
 	$AudioEngine.start_loop("main_theme")
+	if is_tutorial_active:
+		$TutorialLoader/LauncherTutorial.hide()
+		is_tutorial_active = false
 	if passed and level < 7:
 		shard_mask |= 1 << (level - 1)
 		$CutsceneLoader.show_scene("shard_fuse_" + str(level))
@@ -60,3 +72,8 @@ func _on_level_reset() -> void:
 func connect_level(level) -> void:
 	level.level_complete.connect(_on_level_complete)
 	level.level_reset.connect(_on_level_reset)
+
+
+func _on_play_tutorial_pressed() -> void:
+	is_tutorial_active = true
+	$TutorialLoader/MainMenuTutorial.show()

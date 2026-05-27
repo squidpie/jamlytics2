@@ -27,3 +27,7 @@ func _on_mute_check_box_toggled(toggled_on: bool) -> void:
 func _on_reset_button_pressed() -> void:
 	$VolumeSlider.value = 0
 	$MuteCheckBox.button_pressed = false
+
+
+func _on_play_tutorial_pressed() -> void:
+	hide()

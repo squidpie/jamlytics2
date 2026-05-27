@@ -1,5 +1,8 @@
 extends Control
 
+signal ammo_launched
+signal reloaded
+
 var dragging = false
 var launched = false
 
@@ -34,6 +37,7 @@ func _physics_process(delta: float) -> void:
 		current_ammo.launch(linear_velocity, angular_velocity)
 		get_node('../HUD/Score').text = str(int(get_node('../HUD/Score').text) + 1)
 		launched = false
+		ammo_launched.emit()
 
 
 func reload(scene: PackedScene) -> void:
@@ -43,6 +47,7 @@ func reload(scene: PackedScene) -> void:
 	current_ammo.position = $LauncherHand/AttachMarker2D.position
 	current_ammo.get_node('RigidBody2D').freeze = true
 	$LauncherHand.add_child(current_ammo)
+	reloaded.emit()
 
 
 func _on_gui_input(event: InputEvent) -> void:

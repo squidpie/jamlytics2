@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cy3isnhpf4r1p" path="res://ui/main_menu/main_menu.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://can8sfds6gsal" path="res://audio_engine/audio_engine.tscn" id="2_lquwl"]
 [ext_resource type="PackedScene" uid="uid://dm6tcjsgd0cap" path="res://level_loader.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://c7rsxv4ojiuho" path="res://tutorial_loader.tscn" id="5_7mycd"]
+[ext_resource type="PackedScene" uid="uid://owvgh4s6vo48" path="res://tutorial_loader.tscn" id="5_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bd6rstis435kg" path="res://cutscenes/cutscene_loader.tscn" id="5_lquwl"]
 
 [node name="Main" type="Node" unique_id=2036140677]

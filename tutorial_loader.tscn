@@ -1,10 +1,48 @@
-[gd_scene format=3 uid="uid://c7rsxv4ojiuho"]
+[gd_scene format=3 uid="uid://owvgh4s6vo48"]
 
 [ext_resource type="Script" uid="uid://bkd1t6737ennv" path="res://tutorial_loader.gd" id="1_4geuv"]
+[ext_resource type="Texture2D" uid="uid://ckuw8vfn7ypp6" path="res://assets/img/main_menu_tutorial.png" id="2_eud6e"]
+[ext_resource type="Texture2D" uid="uid://cknwa7wpjdsod" path="res://assets/img/cross_64px.png" id="3_ujfhm"]
+[ext_resource type="Texture2D" uid="uid://bkcdcucvs7k1u" path="res://assets/img/launcher_tutorial.png" id="4_ujfhm"]
+[ext_resource type="Texture2D" uid="uid://b3nrx735jdl7q" path="res://assets/img/reload_tutorial.png" id="5_q872l"]
 
-[node name="TutorialLoader" type="Node" unique_id=1759440931]
+[node name="TutorialLoader" type="Node2D" unique_id=1178278391]
 script = ExtResource("1_4geuv")
 
 [node name="MainMenuTutorial" type="Node2D" parent="." unique_id=466645522]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="MainMenuTutorial" unique_id=1969400114]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("2_eud6e")
+
+[node name="ExitButton" type="TextureButton" parent="MainMenuTutorial" unique_id=311560762]
+offset_left = 716.0
+offset_top = 106.0
+offset_right = 780.0
+offset_bottom = 170.0
+texture_normal = ExtResource("3_ujfhm")
 
 [node name="LauncherTutorial" type="Node2D" parent="." unique_id=470176648]
+visible = false
+
+[node name="ReloadTexture" type="TextureRect" parent="LauncherTutorial" unique_id=1144987676]
+offset_right = 800.0
+offset_bottom = 360.0
+mouse_filter = 2
+texture = ExtResource("5_q872l")
+
+[node name="LauncherTexture" type="TextureRect" parent="LauncherTutorial" unique_id=739236011]
+offset_right = 800.0
+offset_bottom = 360.0
+mouse_filter = 2
+texture = ExtResource("4_ujfhm")
+
+[node name="ExitButton" type="TextureButton" parent="LauncherTutorial" unique_id=1902835061]
+offset_left = 544.0
+offset_top = 133.0
+offset_right = 608.0
+offset_bottom = 197.0
+texture_normal = ExtResource("3_ujfhm")
