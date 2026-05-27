@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://s5f7s2fenduo"]
 
-[ext_resource type="Texture2D" uid="uid://b7ueenm4uk4lx" path="res://assets/img/core_icon.png" id="1_embc4"]
-[ext_resource type="Texture2D" uid="uid://2juojripm20f" path="res://assets/img/starCore_128px.png" id="2_hq73y"]
+[ext_resource type="Texture2D" uid="uid://hhteos1tu4wk" path="res://assets/img/shards/reg 128/star_core.svg" id="1_gbi0b"]
+[ext_resource type="Texture2D" uid="uid://bi13557qbgad" path="res://assets/img/shards/highlight 128/star_core_hover.svg" id="2_4v7s7"]
 [ext_resource type="Script" uid="uid://c4hpvia21m30u" path="res://ui/main_menu/core_icon.gd" id="3_xlese"]
-[ext_resource type="Texture2D" uid="uid://gmrc6bewx0e7" path="res://assets/img/starShard1_128px.png" id="4_gbi0b"]
-[ext_resource type="Texture2D" uid="uid://cmx2vdmm8tqfx" path="res://assets/img/starShard2_128px.png" id="5_4v7s7"]
-[ext_resource type="Texture2D" uid="uid://cj6objbhoq4tk" path="res://assets/img/starShard3_128px.png" id="6_wbrhn"]
-[ext_resource type="Texture2D" uid="uid://dij2ik4gwnrpu" path="res://assets/img/starShard4_128px.png" id="7_nmiyp"]
-[ext_resource type="Texture2D" uid="uid://bpjb0l0hgqjvn" path="res://assets/img/starShard5_128px.png" id="8_f2bpy"]
-[ext_resource type="Texture2D" uid="uid://dn01t7qwuncus" path="res://assets/img/starShard6_128px.png" id="9_k4r5a"]
+[ext_resource type="Texture2D" uid="uid://x8n2xwa32hsm" path="res://assets/img/shards/reg 128/star_Shard1.svg" id="4_gbi0b"]
+[ext_resource type="Texture2D" uid="uid://b0tjdr8bqfpmq" path="res://assets/img/shards/reg 128/star_Shard2.svg" id="5_4v7s7"]
+[ext_resource type="Texture2D" uid="uid://d224cy8ho3dam" path="res://assets/img/shards/reg 128/star_Shard3.svg" id="6_wbrhn"]
+[ext_resource type="Texture2D" uid="uid://dltfq5d4ltpvu" path="res://assets/img/shards/reg 128/star_Shard4.svg" id="7_nmiyp"]
+[ext_resource type="Texture2D" uid="uid://cdx6g1irqda16" path="res://assets/img/shards/reg 128/star_Shard5.svg" id="8_f2bpy"]
+[ext_resource type="Texture2D" uid="uid://btmqq0852wwp" path="res://assets/img/shards/reg 128/star_Shard6.svg" id="9_k4r5a"]
 
 [node name="CoreIcon" type="TextureButton" unique_id=1336250084]
 anchors_preset = 8
@@ -23,8 +23,9 @@ offset_bottom = 54.26837
 grow_horizontal = 2
 grow_vertical = 2
 disabled = true
-texture_normal = ExtResource("1_embc4")
-texture_disabled = ExtResource("2_hq73y")
+texture_normal = ExtResource("1_gbi0b")
+texture_hover = ExtResource("2_4v7s7")
+texture_disabled = ExtResource("1_gbi0b")
 script = ExtResource("3_xlese")
 
 [node name="Shard1" type="Sprite2D" parent="." unique_id=441785444]

@@ -3,14 +3,22 @@
 [ext_resource type="Script" uid="uid://cgjrhxg3jx86j" path="res://ui/main_menu/main_menu.gd" id="1_omy8q"]
 [ext_resource type="PackedScene" uid="uid://b837j5nuudocn" path="res://ui/main_menu/fragment_slider.tscn" id="2_mu8pm"]
 [ext_resource type="PackedScene" uid="uid://s5f7s2fenduo" path="res://ui/main_menu/core_icon.tscn" id="2_w2r0d"]
-[ext_resource type="Texture2D" uid="uid://gmrc6bewx0e7" path="res://assets/img/starShard1_128px.png" id="6_tf5ef"]
-[ext_resource type="Texture2D" uid="uid://cmx2vdmm8tqfx" path="res://assets/img/starShard2_128px.png" id="7_s4pem"]
-[ext_resource type="Texture2D" uid="uid://cj6objbhoq4tk" path="res://assets/img/starShard3_128px.png" id="8_xio0d"]
-[ext_resource type="Texture2D" uid="uid://dij2ik4gwnrpu" path="res://assets/img/starShard4_128px.png" id="9_tf5ef"]
+[ext_resource type="Texture2D" uid="uid://hhteos1tu4wk" path="res://assets/img/shards/reg 128/star_core.svg" id="3_qao3l"]
+[ext_resource type="Texture2D" uid="uid://bi13557qbgad" path="res://assets/img/shards/highlight 128/star_core_hover.svg" id="4_lknku"]
+[ext_resource type="Texture2D" uid="uid://x8n2xwa32hsm" path="res://assets/img/shards/reg 128/star_Shard1.svg" id="6_u2jyo"]
+[ext_resource type="Texture2D" uid="uid://28m6ny5tumjc" path="res://assets/img/shards/highlight 128/star_Shard1_hover.svg" id="7_bpbph"]
+[ext_resource type="Texture2D" uid="uid://b0tjdr8bqfpmq" path="res://assets/img/shards/reg 128/star_Shard2.svg" id="8_db6af"]
+[ext_resource type="Texture2D" uid="uid://c80bccxx7kwn0" path="res://assets/img/shards/highlight 128/star_Shard2_hover.svg" id="9_rkggs"]
+[ext_resource type="Texture2D" uid="uid://d224cy8ho3dam" path="res://assets/img/shards/reg 128/star_Shard3.svg" id="10_1bnxd"]
 [ext_resource type="Texture2D" uid="uid://cjhxpgisf7iim" path="res://assets/img/adjustment_64px.png" id="10_4e78x"]
-[ext_resource type="Texture2D" uid="uid://bpjb0l0hgqjvn" path="res://assets/img/starShard5_128px.png" id="10_qao3l"]
-[ext_resource type="Texture2D" uid="uid://dn01t7qwuncus" path="res://assets/img/starShard6_128px.png" id="11_lknku"]
+[ext_resource type="Texture2D" uid="uid://d2a1fpcq25450" path="res://assets/img/shards/highlight 128/star_Shard3_hover.svg" id="11_3xnla"]
 [ext_resource type="PackedScene" uid="uid://cfx5j3l4igiqw" path="res://ui/settings_menu/config_menu.tscn" id="11_s4pem"]
+[ext_resource type="Texture2D" uid="uid://dltfq5d4ltpvu" path="res://assets/img/shards/reg 128/star_Shard4.svg" id="12_ln2ma"]
+[ext_resource type="Texture2D" uid="uid://shtvfj2cs3rb" path="res://assets/img/shards/highlight 128/star_Shard4_hover.svg" id="13_5pot6"]
+[ext_resource type="Texture2D" uid="uid://cdx6g1irqda16" path="res://assets/img/shards/reg 128/star_Shard5.svg" id="14_abcvk"]
+[ext_resource type="Texture2D" uid="uid://cneqjsdbuouem" path="res://assets/img/shards/highlight 128/star_Shard5_hover.svg" id="15_mrexm"]
+[ext_resource type="Texture2D" uid="uid://btmqq0852wwp" path="res://assets/img/shards/reg 128/star_Shard6.svg" id="16_62ljp"]
+[ext_resource type="Texture2D" uid="uid://302whw16qi6k" path="res://assets/img/shards/highlight 128/star_Shard6_hover.svg" id="17_r8qe4"]
 
 [node name="MainMenu" type="Control" unique_id=26582682]
 layout_mode = 3
@@ -39,6 +47,9 @@ offset_right = 63.0
 offset_bottom = 60.0
 grow_horizontal = 1
 grow_vertical = 1
+texture_normal = ExtResource("3_qao3l")
+texture_hover = ExtResource("4_lknku")
+texture_disabled = ExtResource("3_qao3l")
 
 [node name="ShardSlider1" parent="." unique_id=1464066816 instance=ExtResource("2_mu8pm")]
 layout_mode = 1
@@ -52,8 +63,8 @@ offset_top = -229.93164
 offset_right = 206.13263
 offset_bottom = -51.43573
 rotation = 0.6847245
-theme_override_icons/grabber = ExtResource("6_tf5ef")
-theme_override_icons/grabber_highlight = ExtResource("6_tf5ef")
+theme_override_icons/grabber = ExtResource("6_u2jyo")
+theme_override_icons/grabber_highlight = ExtResource("7_bpbph")
 
 [node name="ShardSlider2" parent="." unique_id=1097243399 instance=ExtResource("2_mu8pm")]
 layout_mode = 1
@@ -67,8 +78,8 @@ offset_top = -87.09164
 offset_right = 338.33264
 offset_bottom = 91.40428
 rotation = 1.5540926
-theme_override_icons/grabber = ExtResource("7_s4pem")
-theme_override_icons/grabber_highlight = ExtResource("7_s4pem")
+theme_override_icons/grabber = ExtResource("8_db6af")
+theme_override_icons/grabber_highlight = ExtResource("9_rkggs")
 
 [node name="ShardSlider3" parent="." unique_id=297734966 instance=ExtResource("2_mu8pm")]
 layout_mode = 1
@@ -82,8 +93,8 @@ offset_top = 106.00006
 offset_right = 304.3999
 offset_bottom = 284.49597
 rotation = 2.4358132
-theme_override_icons/grabber = ExtResource("8_xio0d")
-theme_override_icons/grabber_highlight = ExtResource("8_xio0d")
+theme_override_icons/grabber = ExtResource("10_1bnxd")
+theme_override_icons/grabber_highlight = ExtResource("11_3xnla")
 
 [node name="ShardSlider4" parent="." unique_id=757887381 instance=ExtResource("2_mu8pm")]
 layout_mode = 1
@@ -97,8 +108,8 @@ offset_top = 185.38837
 offset_right = 53.532593
 offset_bottom = 363.88428
 rotation = 3.7573087
-theme_override_icons/grabber = ExtResource("9_tf5ef")
-theme_override_icons/grabber_highlight = ExtResource("9_tf5ef")
+theme_override_icons/grabber = ExtResource("12_ln2ma")
+theme_override_icons/grabber_highlight = ExtResource("13_5pot6")
 
 [node name="ShardSlider5" parent="." unique_id=1874011463 instance=ExtResource("2_mu8pm")]
 layout_mode = 1
@@ -112,8 +123,8 @@ offset_top = 47.90837
 offset_right = -81.66736
 offset_bottom = 226.40434
 rotation = 4.6941643
-theme_override_icons/grabber = ExtResource("10_qao3l")
-theme_override_icons/grabber_highlight = ExtResource("10_qao3l")
+theme_override_icons/grabber = ExtResource("14_abcvk")
+theme_override_icons/grabber_highlight = ExtResource("15_mrexm")
 
 [node name="ShardSlider6" parent="." unique_id=1074475101 instance=ExtResource("2_mu8pm")]
 layout_mode = 1
@@ -127,8 +138,8 @@ offset_top = -155.65164
 offset_right = -48.86737
 offset_bottom = 22.844269
 rotation = -0.64808285
-theme_override_icons/grabber = ExtResource("11_lknku")
-theme_override_icons/grabber_highlight = ExtResource("11_lknku")
+theme_override_icons/grabber = ExtResource("16_62ljp")
+theme_override_icons/grabber_highlight = ExtResource("17_r8qe4")
 
 [node name="ConfigButton" type="TextureButton" parent="." unique_id=426969472]
 layout_mode = 0
