@@ -7,30 +7,39 @@
 
 [node name="LevelBase" unique_id=748981199 instance=ExtResource("1_6up2b")]
 
-[node name="Label" parent="." index="1" unique_id=674480825]
-text = ":: NEON ::"
-
 [node name="EnemyNeon" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_qskt5")]
-position = Vector2(693, 196)
+position = Vector2(636, 229)
 
-[node name="NeonBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_8tsbn")]
-position = Vector2(694, 235)
+[node name="NeonBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="0" unique_id=1060340984 instance=ExtResource("3_8tsbn")]
+position = Vector2(638, 267)
 
-[node name="NeonBlockLong3" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=1456256682 instance=ExtResource("3_8tsbn")]
-position = Vector2(578, 175)
-
-[node name="NeonBlockLong2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=2039491075 instance=ExtResource("3_8tsbn")]
-position = Vector2(525, 256)
+[node name="NeonBlockLong2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="1" unique_id=2039491075 instance=ExtResource("3_8tsbn")]
+position = Vector2(555, 257)
 rotation = 1.5707964
 
-[node name="NeonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="3" unique_id=1495147859 instance=ExtResource("4_rqsg2")]
-position = Vector2(645, 303)
+[node name="NeonBlockLong5" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="2" unique_id=1118998175 instance=ExtResource("3_8tsbn")]
+position = Vector2(770, 257)
+rotation = 1.5707964
 
-[node name="NeonBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="4" unique_id=1407309248 instance=ExtResource("4_rqsg2")]
-position = Vector2(646, 268)
+[node name="NeonBlockLong6" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="3" unique_id=2147443687 instance=ExtResource("3_8tsbn")]
+position = Vector2(770, 128)
+rotation = 1.5707964
 
-[node name="NeonBlockShort3" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="5" unique_id=657079681 instance=ExtResource("4_rqsg2")]
-position = Vector2(739, 306)
+[node name="NeonBlockLong4" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="4" unique_id=1015578064 instance=ExtResource("3_8tsbn")]
+position = Vector2(522, 256)
+rotation = 1.5707964
 
-[node name="NeonBlockShort4" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="6" unique_id=415011371 instance=ExtResource("4_rqsg2")]
-position = Vector2(740, 271)
+[node name="NeonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="5" unique_id=1495147859 instance=ExtResource("4_rqsg2")]
+position = Vector2(589, 303)
+
+[node name="NeonBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="6" unique_id=1407309248 instance=ExtResource("4_rqsg2")]
+position = Vector2(587, 233)
+
+[node name="NeonBlockShort3" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="7" unique_id=657079681 instance=ExtResource("4_rqsg2")]
+position = Vector2(687, 302)
+
+[node name="NeonBlockShort4" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="8" unique_id=415011371 instance=ExtResource("4_rqsg2")]
+position = Vector2(588, 200)
+
+[node name="Label" parent="." index="4" unique_id=674480825]
+text = ":: NEON ::"
