@@ -19,53 +19,72 @@
 
 [node name="LevelBase" unique_id=748981199 instance=ExtResource("1_jm8gk")]
 
-[node name="Label" parent="." index="1" unique_id=674480825]
-text = ":: BOSS ::"
-
 [node name="EnemyIron" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_3igfe")]
-position = Vector2(638, 197)
+position = Vector2(693.00006, 194)
 
-[node name="IronBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_sbxnr")]
+[node name="IronBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="0" unique_id=1060340984 instance=ExtResource("3_sbxnr")]
 position = Vector2(461, 302)
 
-[node name="NeonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=129819466 instance=ExtResource("4_xp58y")]
+[node name="IronBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="1" unique_id=1772451438 instance=ExtResource("3_sbxnr")]
+position = Vector2(535, 232)
+
+[node name="NeonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="2" unique_id=129819466 instance=ExtResource("4_xp58y")]
 position = Vector2(528, 302)
 
-[node name="CarbonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=823068764 instance=ExtResource("5_ieh1o")]
+[node name="NeonBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="3" unique_id=1393589498 instance=ExtResource("4_xp58y")]
+position = Vector2(573, 231)
+
+[node name="CarbonBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="4" unique_id=823068764 instance=ExtResource("5_ieh1o")]
 position = Vector2(590, 304)
 
-[node name="HeliumBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="3" unique_id=1630813234 instance=ExtResource("6_ydmfm")]
+[node name="HeliumBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="5" unique_id=1630813234 instance=ExtResource("6_ydmfm")]
 position = Vector2(656, 304)
 
-[node name="OxygenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="4" unique_id=1929132011 instance=ExtResource("7_nwhq7")]
+[node name="HeliumBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="6" unique_id=356066940 instance=ExtResource("6_ydmfm")]
+position = Vector2(535, 198)
+
+[node name="OxygenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="7" unique_id=1929132011 instance=ExtResource("7_nwhq7")]
 position = Vector2(724, 306)
 
-[node name="SiliconBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="5" unique_id=1104957927 instance=ExtResource("8_02co5")]
+[node name="OxygenBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="8" unique_id=2103554595 instance=ExtResource("7_nwhq7")]
+position = Vector2(535, 164)
+
+[node name="SiliconBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="9" unique_id=1104957927 instance=ExtResource("8_02co5")]
 position = Vector2(783, 304)
 
-[node name="HydrogenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="6" unique_id=2005228059 instance=ExtResource("9_3i5lu")]
-position = Vector2(641, 240)
+[node name="SiliconBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="10" unique_id=1768826233 instance=ExtResource("8_02co5")]
+position = Vector2(572, 196)
 
-[node name="IronBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="7" unique_id=951537168 instance=ExtResource("10_k2juo")]
+[node name="HydrogenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="11" unique_id=2005228059 instance=ExtResource("9_3i5lu")]
+position = Vector2(694.00006, 236)
+
+[node name="IronBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="12" unique_id=951537168 instance=ExtResource("10_k2juo")]
 position = Vector2(491, 269)
 
-[node name="NeonBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="8" unique_id=1201458969 instance=ExtResource("11_epelm")]
+[node name="NeonBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="13" unique_id=1201458969 instance=ExtResource("11_epelm")]
 position = Vector2(623, 268)
 
-[node name="CarbonBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="9" unique_id=562362293 instance=ExtResource("12_lpckt")]
+[node name="CarbonBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="14" unique_id=562362293 instance=ExtResource("12_lpckt")]
 position = Vector2(757, 270)
 
-[node name="HeliumBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="10" unique_id=1975217816 instance=ExtResource("13_1wdt6")]
-position = Vector2(555, 190)
+[node name="CarbonBlockLong2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="15" unique_id=1127652267 instance=ExtResource("12_lpckt")]
+position = Vector2(491, 189)
 rotation = 1.5707964
 
-[node name="OxygenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="11" unique_id=720503342 instance=ExtResource("14_3t2fq")]
-position = Vector2(689, 187)
+[node name="HeliumBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="16" unique_id=1975217816 instance=ExtResource("13_1wdt6")]
+position = Vector2(643.00006, 186)
 rotation = 1.5707964
 
-[node name="SiliconBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="12" unique_id=1409760245 instance=ExtResource("15_qyu3j")]
-position = Vector2(618, 107)
+[node name="OxygenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="17" unique_id=720503342 instance=ExtResource("14_3t2fq")]
+position = Vector2(742.00006, 186)
+rotation = 1.5707964
 
-[node name="HydrogenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="13" unique_id=1567411924 instance=ExtResource("16_64gf8")]
-position = Vector2(457, 185)
+[node name="SiliconBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="18" unique_id=1409760245 instance=ExtResource("15_qyu3j")]
+position = Vector2(692.00006, 103)
+
+[node name="HydrogenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="19" unique_id=1567411924 instance=ExtResource("16_64gf8")]
+position = Vector2(610, 186)
 rotation = -1.5667155
+
+[node name="Label" parent="." index="4" unique_id=674480825]
+text = ":: BOSS ::"
