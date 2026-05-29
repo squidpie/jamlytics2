@@ -7,17 +7,38 @@
 
 [node name="LevelBase" unique_id=748981199 instance=ExtResource("1_fwt2v")]
 
-[node name="Label" parent="." index="1" unique_id=674480825]
-text = ":: HELIUM ::"
-
 [node name="EnemyHelium" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_b15rf")]
-position = Vector2(589, 298)
+position = Vector2(609, 271)
 
-[node name="HeliumBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_t0qhu")]
-position = Vector2(495, 271)
+[node name="HeliumBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="0" unique_id=1060340984 instance=ExtResource("3_t0qhu")]
+position = Vector2(706, 274)
 
-[node name="HeliumBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=1742075085 instance=ExtResource("4_t6q73")]
-position = Vector2(539, 305)
+[node name="HeliumBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="1" unique_id=1742075085 instance=ExtResource("4_t6q73")]
+position = Vector2(659, 308)
 
-[node name="HeliumBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=1309577737 instance=ExtResource("4_t6q73")]
-position = Vector2(635, 306)
+[node name="HeliumBlockShort6" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="2" unique_id=873874521 instance=ExtResource("4_t6q73")]
+position = Vector2(659, 241)
+
+[node name="HeliumBlockShort7" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="3" unique_id=295152448 instance=ExtResource("4_t6q73")]
+position = Vector2(560, 240)
+
+[node name="HeliumBlockShort3" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="4" unique_id=1591503706 instance=ExtResource("4_t6q73")]
+position = Vector2(751, 307)
+
+[node name="HeliumBlockLong2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="5" unique_id=301505703 instance=ExtResource("3_t0qhu")]
+position = Vector2(509, 272)
+
+[node name="HeliumBlockLong3" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="6" unique_id=863766274 instance=ExtResource("3_t0qhu")]
+position = Vector2(610, 208)
+
+[node name="HeliumBlockShort4" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="7" unique_id=822645700 instance=ExtResource("4_t6q73")]
+position = Vector2(462, 306)
+
+[node name="HeliumBlockShort5" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="8" unique_id=1875065170 instance=ExtResource("4_t6q73")]
+position = Vector2(554, 305)
+
+[node name="HeliumBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="9" unique_id=1309577737 instance=ExtResource("4_t6q73")]
+position = Vector2(610, 310)
+
+[node name="Label" parent="." index="4" unique_id=674480825]
+text = ":: HELIUM ::"
