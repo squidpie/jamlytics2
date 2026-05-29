@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://coq8vaa6ntu23"]
 
 [ext_resource type="PackedScene" uid="uid://0443p2pedju8" path="res://levels/objects/enemies/enemy_base.tscn" id="1_afpss"]
+[ext_resource type="Texture2D" uid="uid://d0ful3hqrx35b" path="res://assets/img/o_head.svg" id="2_l18l2"]
 
 [node name="EnemyOxygen" unique_id=1531186198 instance=ExtResource("1_afpss")]
+
+[node name="Sprite2D" parent="." index="1" unique_id=1640460370]
+texture = ExtResource("2_l18l2")

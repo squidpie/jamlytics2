@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://b215ujthul0n4"]
 
 [ext_resource type="PackedScene" uid="uid://0443p2pedju8" path="res://levels/objects/enemies/enemy_base.tscn" id="1_18mst"]
+[ext_resource type="Texture2D" uid="uid://cuv7bq0getxkb" path="res://assets/img/he_head.svg" id="2_rs7a0"]
 
 [node name="EnemyHelium" unique_id=1531186198 instance=ExtResource("1_18mst")]
+
+[node name="Sprite2D" parent="." index="1" unique_id=1640460370]
+texture = ExtResource("2_rs7a0")

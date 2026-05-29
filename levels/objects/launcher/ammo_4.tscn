@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://vesiasvaeaeq"]
 
 [ext_resource type="PackedScene" uid="uid://1p2t8qxdd1gn" path="res://levels/objects/launcher/ammo_base.tscn" id="1_gjhne"]
+[ext_resource type="Texture2D" uid="uid://cuv7bq0getxkb" path="res://assets/img/he_head.svg" id="2_e05no"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_436hw"]
 friction = 0.01
@@ -9,3 +10,6 @@ friction = 0.01
 
 [node name="RigidBody2D" parent="." index="0" unique_id=1335042170]
 physics_material_override = SubResource("PhysicsMaterial_436hw")
+
+[node name="Sprite2D" parent="RigidBody2D" index="1" unique_id=608065490]
+texture = ExtResource("2_e05no")

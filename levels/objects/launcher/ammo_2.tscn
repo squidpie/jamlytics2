@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dm35v1fn0w778"]
 
 [ext_resource type="PackedScene" uid="uid://1p2t8qxdd1gn" path="res://levels/objects/launcher/ammo_base.tscn" id="1_q8qkj"]
+[ext_resource type="Texture2D" uid="uid://d0ful3hqrx35b" path="res://assets/img/o_head.svg" id="2_itpqs"]
 [ext_resource type="Script" uid="uid://baf3eu57r5t1i" path="res://levels/objects/launcher/ammo_2_effect.gd" id="2_vqret"]
 [ext_resource type="Texture2D" uid="uid://doc2xodrw6c2v" path="res://assets/img/Effect_Charged_1_321x371.png" id="3_2w4go"]
 
@@ -121,6 +122,9 @@ animations = [{
 }]
 
 [node name="AmmoBase" unique_id=420947838 instance=ExtResource("1_q8qkj")]
+
+[node name="Sprite2D" parent="RigidBody2D" parent_id_path=PackedInt32Array(1335042170) index="1" unique_id=608065490]
+texture = ExtResource("2_itpqs")
 
 [node name="Effect" parent="RigidBody2D" parent_id_path=PackedInt32Array(1335042170) index="2" unique_id=1634537745]
 script = ExtResource("2_vqret")
