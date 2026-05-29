@@ -7,38 +7,57 @@
 
 [node name="LevelBase" unique_id=748981199 instance=ExtResource("1_vn7o3")]
 
-[node name="Label" parent="." index="1" unique_id=674480825]
-text = ":: HYDROGEN ::"
-
-[node name="Launcher" parent="." index="2" unique_id=499897539]
+[node name="Launcher" parent="." index="1" unique_id=499897539]
 offset_left = 0.0
 offset_top = -360.0
 offset_right = 0.0
 offset_bottom = -360.0
 
 [node name="EnemyHydrogen" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_kx6l7")]
-position = Vector2(556, 200)
+position = Vector2(654, 233)
 
-[node name="HydrogenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_n46q3")]
-position = Vector2(556, 237)
+[node name="HydrogenBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="0" unique_id=1060340984 instance=ExtResource("3_n46q3")]
+position = Vector2(556, 240)
 
-[node name="HydrogenBlockLong2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=361637846 instance=ExtResource("3_n46q3")]
-position = Vector2(656, 271)
+[node name="HydrogenBlockLong4" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="1" unique_id=534946813 instance=ExtResource("3_n46q3")]
+position = Vector2(652, 175)
 
-[node name="HydrogenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=628650819 instance=ExtResource("4_btoec")]
+[node name="HydrogenBlockLong3" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="2" unique_id=884146822 instance=ExtResource("3_n46q3")]
+position = Vector2(570, 160)
+rotation = 1.5707964
+
+[node name="HydrogenBlockLong2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="3" unique_id=361637846 instance=ExtResource("3_n46q3")]
+position = Vector2(655, 273)
+
+[node name="HydrogenBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="4" unique_id=628650819 instance=ExtResource("4_btoec")]
 position = Vector2(508, 307)
 
-[node name="HydrogenBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="3" unique_id=908263831 instance=ExtResource("4_btoec")]
+[node name="HydrogenBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="5" unique_id=908263831 instance=ExtResource("4_btoec")]
 position = Vector2(508, 274)
 
-[node name="HydrogenBlockShort3" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="4" unique_id=1958044325 instance=ExtResource("4_btoec")]
-position = Vector2(508, 204)
+[node name="HydrogenBlockShort3" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="6" unique_id=1958044325 instance=ExtResource("4_btoec")]
+position = Vector2(508, 207)
 
-[node name="HydrogenBlockShort4" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="5" unique_id=1720724850 instance=ExtResource("4_btoec")]
-position = Vector2(602, 202)
+[node name="HydrogenBlockShort9" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="7" unique_id=1455869034 instance=ExtResource("4_btoec")]
+position = Vector2(539, 207)
 
-[node name="HydrogenBlockShort5" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="6" unique_id=1975894184 instance=ExtResource("4_btoec")]
+[node name="HydrogenBlockShort10" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="8" unique_id=712828566 instance=ExtResource("4_btoec")]
+position = Vector2(538, 175)
+
+[node name="HydrogenBlockShort4" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="9" unique_id=1720724850 instance=ExtResource("4_btoec")]
+position = Vector2(602, 208)
+
+[node name="HydrogenBlockShort7" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="10" unique_id=397451802 instance=ExtResource("4_btoec")]
+position = Vector2(703, 208)
+
+[node name="HydrogenBlockShort8" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="11" unique_id=1727877825 instance=ExtResource("4_btoec")]
+position = Vector2(703, 240)
+
+[node name="HydrogenBlockShort5" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="12" unique_id=1975894184 instance=ExtResource("4_btoec")]
 position = Vector2(607, 307)
 
-[node name="HydrogenBlockShort6" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="7" unique_id=1036972732 instance=ExtResource("4_btoec")]
+[node name="HydrogenBlockShort6" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="13" unique_id=1036972732 instance=ExtResource("4_btoec")]
 position = Vector2(705, 307)
+
+[node name="Label" parent="." index="4" unique_id=674480825]
+text = ":: HYDROGEN ::"
