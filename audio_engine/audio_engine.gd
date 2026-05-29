@@ -74,3 +74,8 @@ func set_mute(mute: bool) -> void:
 
 func _on_layer_finished() -> void:
 	start_layer()
+
+
+func play_fx(id: String) -> void:
+	$FXPlayer.stream = load("res://assets/audio/fx/" + id + ".wav")
+	$FXPlayer.play()

@@ -24,3 +24,10 @@ shape = SubResource("CapsuleShape2D_rcrt8")
 texture = ExtResource("1_5xfvb")
 
 [node name="Effect" type="Node2D" parent="RigidBody2D" unique_id=1634537745]
+
+[node name="SFXTimer" type="Timer" parent="RigidBody2D" unique_id=586140192]
+process_callback = 0
+wait_time = 1.25
+
+[connection signal="body_entered" from="RigidBody2D" to="." method="_on_rigid_body_2d_body_entered"]
+[connection signal="timeout" from="RigidBody2D/SFXTimer" to="." method="_on_sfx_timer_timeout"]

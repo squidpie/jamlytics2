@@ -10,3 +10,5 @@ script = ExtResource("1_n5h64")
 
 [node name="LayerLoopPlayer" type="Node" parent="." unique_id=491817047]
 script = ExtResource("2_r1rco")
+
+[node name="FXPlayer" type="AudioStreamPlayer" parent="." unique_id=2048718902]
