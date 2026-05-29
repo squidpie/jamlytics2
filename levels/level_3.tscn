@@ -7,30 +7,41 @@
 
 [node name="LevelBase" unique_id=748981199 instance=ExtResource("1_vkd0v")]
 
-[node name="Label" parent="." index="1" unique_id=674480825]
-text = ":: SILICON ::"
-
 [node name="EnemySilicon" parent="Structure/Enemies" parent_id_path=PackedInt32Array(427519716) index="0" unique_id=1531186198 instance=ExtResource("2_bmgug")]
-position = Vector2(639, 219)
+position = Vector2(650, 222)
 
-[node name="SiliconBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="0" unique_id=1060340984 instance=ExtResource("3_20opy")]
-position = Vector2(543, 177)
+[node name="SiliconBlockLong" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="0" unique_id=1060340984 instance=ExtResource("3_20opy")]
+position = Vector2(645, 174)
 
-[node name="SiliconBlockLong4" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="1" unique_id=1485110535 instance=ExtResource("3_20opy")]
-position = Vector2(637, 261)
+[node name="SiliconBlockLong4" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="1" unique_id=1485110535 instance=ExtResource("3_20opy")]
+position = Vector2(611, 272)
 
-[node name="SiliconBlockLong2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="2" unique_id=1020187877 instance=ExtResource("3_20opy")]
-position = Vector2(494, 258)
+[node name="SiliconBlockLong2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="2" unique_id=1020187877 instance=ExtResource("3_20opy")]
+position = Vector2(701, 256)
 rotation = 1.5707964
 
-[node name="SiliconBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="3" unique_id=611711207 instance=ExtResource("4_8l0e1")]
-position = Vector2(591, 301)
+[node name="SiliconBlockLong3" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="3" unique_id=1651895850 instance=ExtResource("3_20opy")]
+position = Vector2(561, 192)
+rotation = 1.5707964
 
-[node name="SiliconBlockShort3" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="4" unique_id=470402842 instance=ExtResource("4_8l0e1")]
-position = Vector2(683, 303)
+[node name="SiliconBlockLong5" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="4" unique_id=1901442617 instance=ExtResource("3_20opy")]
+position = Vector2(529, 259)
+rotation = 1.5707964
 
-[node name="SiliconBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="5" unique_id=1493634446 instance=ExtResource("4_8l0e1")]
-position = Vector2(683, 222)
+[node name="SiliconBlockShort" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="5" unique_id=611711207 instance=ExtResource("4_8l0e1")]
+position = Vector2(562, 304)
 
-[node name="SiliconBlockShort4" parent="Structure/Objects" parent_id_path=PackedInt32Array(340698772) index="6" unique_id=2119476162 instance=ExtResource("4_8l0e1")]
-position = Vector2(590, 223)
+[node name="SiliconBlockShort3" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="6" unique_id=470402842 instance=ExtResource("4_8l0e1")]
+position = Vector2(612, 304)
+
+[node name="SiliconBlockShort5" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="7" unique_id=1846150116 instance=ExtResource("4_8l0e1")]
+position = Vector2(659, 306)
+
+[node name="SiliconBlockShort2" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="8" unique_id=1493634446 instance=ExtResource("4_8l0e1")]
+position = Vector2(596, 242)
+
+[node name="SiliconBlockShort4" parent="Structure/Objects" parent_id_path=PackedInt32Array(1426496848) index="9" unique_id=2119476162 instance=ExtResource("4_8l0e1")]
+position = Vector2(596, 207)
+
+[node name="Label" parent="." index="4" unique_id=674480825]
+text = ":: SILICON ::"
