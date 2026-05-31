@@ -9,7 +9,7 @@ var launched = false
 var diff_position = Vector2.ZERO
 var current_ammo = null
 
-var MAX_DRAG = 250
+var MAX_DRAG = 300
 var AMMO_VELOCITY_FACTOR = 4.5
 
 # Called when the node enters the scene tree for the first time.
@@ -22,7 +22,7 @@ func _process(_delta: float) -> void:
 	if dragging:
 		var mouse_position = get_local_mouse_position()
 		var radius = mouse_position.distance_to($Anchor.position)
-		if radius < MAX_DRAG:
+		if radius < MAX_DRAG and mouse_position.x < $Anchor.position.x:
 			$LauncherHand.transform.origin = mouse_position
 			diff_position = $Anchor.position - $LauncherHand.transform.origin
 

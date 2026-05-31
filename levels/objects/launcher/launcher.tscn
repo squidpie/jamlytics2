@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://lopcb5324k51" path="res://levels/objects/launcher/launcher_hand.tscn" id="1_q1nxb"]
 [ext_resource type="PackedScene" uid="uid://dfeufu74vh64h" path="res://levels/objects/launcher/launcher_arm.tscn" id="2_tb1aj"]
 [ext_resource type="PackedScene" uid="uid://dsb6h41bxs7oi" path="res://levels/objects/launcher/ammo_selector.tscn" id="4_aeei8"]
+[ext_resource type="PackedScene" uid="uid://b5qmbd2knqwq7" path="res://levels/objects/launcher/launcher_arm_upper.tscn" id="4_bthcp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tb1aj"]
 
@@ -13,7 +14,8 @@ anchors_preset = 0
 script = ExtResource("1_ax8fy")
 
 [node name="LauncherHand" parent="." unique_id=12282379 instance=ExtResource("1_q1nxb")]
-position = Vector2(17, 179)
+position = Vector2(129, 230.00002)
+scale = Vector2(0.75, 0.75)
 collision_layer = 3
 collision_mask = 3
 
@@ -23,24 +25,24 @@ node_a = NodePath("..")
 node_b = NodePath("../../LowerArm")
 
 [node name="LowerArm" parent="." unique_id=781269525 instance=ExtResource("2_tb1aj")]
-position = Vector2(146.00002, 246.00002)
-rotation = 1.2255869
+position = Vector2(198, 186.99998)
+rotation = 4.518872
 collision_layer = 2
 collision_mask = 2
 
 [node name="PinJoint2D" type="PinJoint2D" parent="LowerArm" unique_id=298331654]
 position = Vector2(60, -2)
 node_a = NodePath("..")
-node_b = NodePath("../../UpperArm")
+node_b = NodePath("../../LauncherArmUpper")
 
-[node name="UpperArm" parent="." unique_id=1733986054 instance=ExtResource("2_tb1aj")]
-position = Vector2(172.99994, 243)
-rotation = -1.5742426
+[node name="LauncherArmUpper" parent="." unique_id=1898848798 instance=ExtResource("4_bthcp")]
+position = Vector2(222, 169)
+rotation = 0.83251417
 collision_layer = 2
 collision_mask = 2
 
 [node name="Anchor" type="StaticBody2D" parent="." unique_id=2052240572]
-position = Vector2(170, 155)
+position = Vector2(263, 208.99998)
 collision_layer = 2
 collision_mask = 2
 
@@ -51,7 +53,7 @@ shape = SubResource("CircleShape2D_tb1aj")
 [node name="DampedSpringJoint2D" type="PinJoint2D" parent="Anchor" unique_id=1900080484]
 position = Vector2(0, 2)
 node_a = NodePath("..")
-node_b = NodePath("../../UpperArm")
+node_b = NodePath("../../LauncherArmUpper")
 
 [node name="AmmoSelector" parent="." unique_id=1375343770 instance=ExtResource("4_aeei8")]
 layout_mode = 1

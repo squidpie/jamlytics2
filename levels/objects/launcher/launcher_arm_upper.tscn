@@ -1,15 +1,15 @@
-[gd_scene format=3 uid="uid://dfeufu74vh64h"]
+[gd_scene format=3 uid="uid://b5qmbd2knqwq7"]
 
-[ext_resource type="Texture2D" uid="uid://tqowpb4k277e" path="res://assets/img/dragon_tail_MIDDLE.svg" id="1_gpo74"]
+[ext_resource type="Texture2D" uid="uid://dpvgi4jotdcw8" path="res://assets/img/dragon_tail_ANCHOR.svg" id="1_m7xm1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4uetw"]
 size = Vector2(128, 32)
 
-[node name="LauncherArm" type="RigidBody2D" unique_id=781269525]
+[node name="LauncherArmUpper" type="RigidBody2D" unique_id=781269525]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=249424504]
 shape = SubResource("RectangleShape2D_4uetw")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=441363927]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_gpo74")
+texture = ExtResource("1_m7xm1")
