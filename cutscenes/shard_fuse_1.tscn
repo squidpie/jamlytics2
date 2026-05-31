@@ -8,3 +8,11 @@
 [node name="Sprite2D" type="Sprite2D" parent="." index="0" unique_id=858116164]
 position = Vector2(400, 180)
 texture = ExtResource("2_kj3bq")
+
+[node name="Label" type="Label" parent="Sprite2D" index="0" unique_id=691379760]
+offset_left = 179.0
+offset_top = 136.0
+offset_right = 392.0
+offset_bottom = 172.0
+theme_override_font_sizes/font_size = 26
+text = "Click to Continue"

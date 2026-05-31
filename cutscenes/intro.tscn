@@ -1,10 +1,57 @@
 [gd_scene format=3 uid="uid://b45vbu4exnvn7"]
 
 [ext_resource type="PackedScene" uid="uid://cwixutcjr740c" path="res://cutscenes/cutscene_base.tscn" id="1_fwsgo"]
-[ext_resource type="Texture2D" uid="uid://d005jk6d433qb" path="res://assets/img/cutscene_placeholder.png" id="2_mbx7u"]
+[ext_resource type="Texture2D" uid="uid://dg3e1f38u7ibv" path="res://assets/img/cutscenes/intro_3.png" id="2_64f8t"]
+[ext_resource type="Texture2D" uid="uid://dqgjdlg0l66cs" path="res://assets/img/cutscenes/intro_1.png" id="2_75nhy"]
+[ext_resource type="Texture2D" uid="uid://cw2nt0uqlyly" path="res://assets/img/cutscenes/intro_impact.png" id="3_64f8t"]
+[ext_resource type="Texture2D" uid="uid://drslw1785eisg" path="res://assets/img/cutscenes/intro_2.png" id="4_kj027"]
 
 [node name="CutsceneBase" unique_id=1673344090 instance=ExtResource("1_fwsgo")]
 
-[node name="Sprite2D" type="Sprite2D" parent="." index="0" unique_id=858116164]
+[node name="Sprite2D4" type="Sprite2D" parent="." index="0" unique_id=502407187]
 position = Vector2(400, 180)
-texture = ExtResource("2_mbx7u")
+texture = ExtResource("2_64f8t")
+
+[node name="Label" type="Label" parent="Sprite2D4" index="0" unique_id=18433827]
+offset_left = 179.0
+offset_top = 136.0
+offset_right = 392.0
+offset_bottom = 172.0
+theme_override_font_sizes/font_size = 26
+text = "Click to Continue"
+
+[node name="Sprite2D3" type="Sprite2D" parent="." index="1" unique_id=1850007945]
+position = Vector2(400, 180)
+texture = ExtResource("4_kj027")
+
+[node name="Label" type="Label" parent="Sprite2D3" index="0" unique_id=134932467]
+offset_left = 179.0
+offset_top = 136.0
+offset_right = 392.0
+offset_bottom = 172.0
+theme_override_font_sizes/font_size = 26
+text = "Click to Continue"
+
+[node name="Sprite2D2" type="Sprite2D" parent="." index="2" unique_id=1144535121]
+position = Vector2(400, 180)
+texture = ExtResource("3_64f8t")
+
+[node name="Label" type="Label" parent="Sprite2D2" index="0" unique_id=1608104924]
+offset_left = 179.0
+offset_top = 136.0
+offset_right = 392.0
+offset_bottom = 172.0
+theme_override_font_sizes/font_size = 26
+text = "Click to Continue"
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="3" unique_id=858116164]
+position = Vector2(400, 180)
+texture = ExtResource("2_75nhy")
+
+[node name="Label" type="Label" parent="Sprite2D" index="0" unique_id=1995316981]
+offset_left = 179.0
+offset_top = 136.0
+offset_right = 392.0
+offset_bottom = 172.0
+theme_override_font_sizes/font_size = 26
+text = "Click to Continue"

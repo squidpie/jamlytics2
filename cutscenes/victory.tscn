@@ -10,20 +10,27 @@
 position = Vector2(400, 180)
 texture = ExtResource("2_01ias")
 
-[node name="Score" type="Label" parent="." index="1" unique_id=1363839568]
-layout_mode = 1
+[node name="Score" type="Label" parent="Sprite2D" index="0" unique_id=1363839568]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 13.0
-offset_top = -19.0
-offset_right = 103.0
-offset_bottom = 71.0
+offset_left = -387.0
+offset_top = -199.0
+offset_right = -297.0
+offset_bottom = -109.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 60
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_01ias")
+
+[node name="Label" type="Label" parent="Sprite2D" index="1" unique_id=152519092]
+offset_left = 179.0
+offset_top = 136.0
+offset_right = 392.0
+offset_bottom = 172.0
+theme_override_font_sizes/font_size = 26
+text = "Click to Continue"
