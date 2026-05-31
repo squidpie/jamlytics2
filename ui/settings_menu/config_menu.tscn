@@ -55,7 +55,9 @@ offset_left = 18.0
 offset_top = 116.0
 offset_right = 85.0
 offset_bottom = 139.0
-text = "VOLUME"
+text = "MUSIC"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="MuteCheckBox" type="CheckBox" parent="." unique_id=458859426]
 layout_mode = 0
@@ -74,8 +76,47 @@ offset_bottom = 322.0
 text = "PLAY
 TUTORIAL"
 
+[node name="SFXVolumeLabel" type="Label" parent="." unique_id=2118081423]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 159.0
+offset_right = 83.0
+offset_bottom = 182.0
+text = "EFFECTS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SFXVolumeSlider" type="HSlider" parent="." unique_id=1648200548]
+layout_mode = 0
+offset_left = 121.0
+offset_top = 139.0
+offset_right = 301.0
+offset_bottom = 200.0
+min_value = -10.0
+max_value = 5.0
+
+[node name="SectionTitle" type="Label" parent="." unique_id=1424626308]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 78.0
+offset_right = 244.0
+offset_bottom = 101.0
+text = "VOLUME"
+
+[node name="SFXMute" type="CheckBox" parent="." unique_id=279948972]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 156.0
+offset_right = 345.0
+offset_bottom = 180.0
+text = "Mute"
+alignment = 1
+
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
 [connection signal="value_changed" from="VolumeSlider" to="." method="_on_volume_slider_value_changed"]
 [connection signal="toggled" from="MuteCheckBox" to="." method="_on_mute_check_box_toggled"]
 [connection signal="pressed" from="PlayTutorialButton" to="." method="_on_play_tutorial_pressed"]
+[connection signal="drag_ended" from="SFXVolumeSlider" to="." method="_on_sfx_volume_slider_drag_ended"]
+[connection signal="value_changed" from="SFXVolumeSlider" to="." method="_on_sfx_volume_slider_value_changed"]
+[connection signal="toggled" from="SFXMute" to="." method="_on_sfx_mute_toggled"]

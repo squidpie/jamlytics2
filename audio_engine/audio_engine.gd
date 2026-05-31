@@ -3,7 +3,8 @@ extends Node
 var last_layer = null
 var muted = false
 var current_volume = 0
-
+var current_fx_volume = 0
+var fx_muted = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -70,13 +71,25 @@ func set_mute(mute: bool) -> void:
 	if not muted:
 		$MainLoopPlayer.play()
 
+func set_fx_volume(value: float) -> void:
+	current_fx_volume = value
+	$FXPlayer.volume_db = value
+
+
+func set_fx_mute(mute: bool) -> void:
+	fx_muted = mute
+	$FXPlayer.stream_paused = mute
+
 
 func _on_layer_finished() -> void:
 	start_layer()
 
 
 func play_fx(id: String) -> void:
+	if fx_muted:
+		return
 	$FXPlayer.stream = load("res://assets/audio/fx/" + id + ".wav")
+	$FXPlayer.volume_db = current_fx_volume
 	$FXPlayer.play()
 
 
