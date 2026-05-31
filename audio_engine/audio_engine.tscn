@@ -6,9 +6,10 @@
 [ext_resource type="AudioStream" uid="uid://bo64f2omgp6jf" path="res://assets/audio/layer_1.ogg" id="3_w3o6y"]
 [ext_resource type="AudioStream" uid="uid://b6enq0fmibsmw" path="res://assets/audio/oxygen.ogg" id="4_6ppth"]
 [ext_resource type="AudioStream" uid="uid://n6r31yq6bkno" path="res://assets/audio/carbon.ogg" id="6_084pw"]
+[ext_resource type="AudioStream" uid="uid://nne4njy7xaxc" path="res://assets/audio/neon.ogg" id="7_084pw"]
 
 [sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_w3o6y"]
-clip_count = 4
+clip_count = 5
 clip_0/name = &"Iron"
 clip_0/stream = ExtResource("3_w3o6y")
 clip_0/auto_advance = 0
@@ -24,6 +25,10 @@ clip_3/name = &"Carbon"
 clip_3/stream = ExtResource("6_084pw")
 clip_3/auto_advance = 1
 clip_3/next_clip = 3
+clip_4/name = &"Neon"
+clip_4/stream = ExtResource("7_084pw")
+clip_4/auto_advance = 1
+clip_4/next_clip = 4
 _transitions = {
 Vector2i(-1, -1): {
 "fade_beats": 2.0,
@@ -50,6 +55,12 @@ Vector2i(2, 2): {
 "to_time": 0
 },
 Vector2i(3, 3): {
+"fade_beats": 1.0,
+"fade_mode": 0,
+"from_time": 0,
+"to_time": 0
+},
+Vector2i(4, 4): {
 "fade_beats": 1.0,
 "fade_mode": 0,
 "from_time": 0,
