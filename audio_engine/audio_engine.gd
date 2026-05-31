@@ -50,13 +50,15 @@ func unload_last_layer() -> void:
 func start_layer() -> void:
 	if muted:
 		return
-	for player in $LayerLoopPlayer.get_children():
-		player.play()
+	$LevelLoopPlayer.play()
+	#for player in $LayerLoopPlayer.get_children():
+		#player.play()
 
 
 func stop_layer() -> void:
-	for player in $LayerLoopPlayer.get_children():
-		player.stop()
+	$LevelLoopPlayer.stop()
+	#for player in $LayerLoopPlayer.get_children():
+		#player.stop()
 
 
 func set_volume(value: float) -> void:

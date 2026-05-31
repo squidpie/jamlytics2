@@ -21,6 +21,8 @@ func _process(_delta: float) -> void:
 func _on_main_menu_load_level(args) -> void:
 	var level = args[0]
 	$AudioEngine.stop_loop()
+	$AudioEngine.play_fx("click")
+	await get_tree().create_timer(0.3).timeout
 	$LevelLoader.load_level(level, shard_mask)
 	$MainMenu.hide()
 	if is_tutorial_active:
