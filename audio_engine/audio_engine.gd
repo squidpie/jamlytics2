@@ -51,19 +51,16 @@ func start_layer() -> void:
 	if muted:
 		return
 	$LevelLoopPlayer.play()
-	#for player in $LayerLoopPlayer.get_children():
-		#player.play()
 
 
 func stop_layer() -> void:
 	$LevelLoopPlayer.stop()
-	#for player in $LayerLoopPlayer.get_children():
-		#player.stop()
 
 
 func set_volume(value: float) -> void:
 	current_volume = value
 	$MainLoopPlayer.volume_db = value
+	$LevelLoopPlayer.volume_db = value
 	$LayerLoopPlayer.set_volume(value)
 
 
@@ -81,3 +78,7 @@ func _on_layer_finished() -> void:
 func play_fx(id: String) -> void:
 	$FXPlayer.stream = load("res://assets/audio/fx/" + id + ".wav")
 	$FXPlayer.play()
+
+
+func play_clip(index: int) -> void:
+	$LevelLoopPlayer.get_stream_playback().switch_to_clip(index)

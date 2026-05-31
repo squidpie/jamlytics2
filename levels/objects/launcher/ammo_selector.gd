@@ -1,9 +1,11 @@
 extends Control
 
 var shard_mask = 0b000000
+var audio_engine = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	audio_engine = get_node("/root/Main/AudioEngine")
 	$Core.pressed.connect(_on_core_button_pressed)
 	$Shard1.pressed.connect(_on_shard_1_button_pressed)
 	$Shard2.pressed.connect(_on_shard_2_button_pressed)
@@ -32,28 +34,35 @@ func _process(_delta: float) -> void:
 
 
 func _on_core_button_pressed() -> void:
+	audio_engine.play_clip(0)
 	get_parent().reload(load('res://levels/objects/launcher/ammo_0.tscn'))
 
 
 func _on_shard_1_button_pressed() -> void:
+	audio_engine.play_clip(1)
 	get_parent().reload(load('res://levels/objects/launcher/ammo_1.tscn'))
 
 
 func _on_shard_2_button_pressed() -> void:
+	audio_engine.play_clip(2)
 	get_parent().reload(load('res://levels/objects/launcher/ammo_2.tscn'))
 
 
 func _on_shard_3_button_pressed() -> void:
+	audio_engine.play_clip(3)
 	get_parent().reload(load('res://levels/objects/launcher/ammo_3.tscn'))
 
 
 func _on_shard_4_button_pressed() -> void:
+	audio_engine.play_clip(4)
 	get_parent().reload(load('res://levels/objects/launcher/ammo_4.tscn'))
 
 
 func _on_shard_5_button_pressed() -> void:
+	audio_engine.play_clip(5)
 	get_parent().reload(load('res://levels/objects/launcher/ammo_5.tscn'))
 
 
 func _on_shard_6_button_pressed() -> void:
+	audio_engine.play_clip(6)
 	get_parent().reload(load('res://levels/objects/launcher/ammo_6.tscn'))

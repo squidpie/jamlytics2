@@ -36,7 +36,6 @@ func _on_level_load_complete() -> void:
 	if is_tutorial_active:
 		level.ammo_launched.connect($TutorialLoader._on_ammo_launched)
 		level.reloaded.connect($TutorialLoader._on_reloaded)
-	$AudioEngine.load_layer(str(level.level))
 	$AudioEngine.start_layer()
 
 
@@ -62,8 +61,6 @@ func _on_level_complete(args) -> void:
 		$CutsceneLoader.show_scene("splash_screen")
 		$CutsceneLoader.show_scene("credits")
 		$CutsceneLoader.show_scene("victory")
-	else:
-		$AudioEngine.unload_last_layer()
 
 
 func _on_level_reset() -> void:
