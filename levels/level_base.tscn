@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://73mghudfqe4v" path="res://levels/level_base.gd" id="1_hk6b7"]
 [ext_resource type="PackedScene" uid="uid://dylyetyippchk" path="res://levels/objects/launcher/launcher.tscn" id="2_nmr65"]
+[ext_resource type="Texture2D" uid="uid://ncsef313cc06" path="res://assets/img/background_level.png" id="2_ts4ud"]
 [ext_resource type="PackedScene" uid="uid://c3kxmh6y300wn" path="res://ui/HUD/hud.tscn" id="3_vmt1o"]
 [ext_resource type="Texture2D" uid="uid://bd8641kdeqo8p" path="res://assets/img/launcher_arm_part.png" id="4_da5si"]
 [ext_resource type="Script" uid="uid://cgqxafrwokjho" path="res://levels/floor.gd" id="4_ep22m"]
@@ -103,13 +104,13 @@ _data = {
 [node name="LevelBase" type="Node" unique_id=748981199]
 script = ExtResource("1_hk6b7")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1867578199]
+[node name="ColorRect" type="TextureRect" parent="." unique_id=1977859199]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.16440657, 0.17006674, 0.118044175, 1)
+texture = ExtResource("2_ts4ud")
 
 [node name="Launcher" parent="." unique_id=499897539 instance=ExtResource("2_nmr65")]
 anchors_preset = 2
