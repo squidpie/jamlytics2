@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dihkao7jml2wp"]
 
 [ext_resource type="PackedScene" uid="uid://cwixutcjr740c" path="res://cutscenes/cutscene_base.tscn" id="1_0kvok"]
-[ext_resource type="Texture2D" uid="uid://d005jk6d433qb" path="res://assets/img/cutscene_placeholder.png" id="2_01ias"]
+[ext_resource type="Texture2D" uid="uid://bhkugqw76ujrf" path="res://assets/img/cutscenes/victory.png" id="2_01ias"]
 [ext_resource type="Script" uid="uid://f1tu8r5olq4o" path="res://cutscenes/score.gd" id="3_01ias"]
 
 [node name="CutsceneBase" unique_id=1673344090 instance=ExtResource("1_0kvok")]
@@ -16,10 +16,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -387.0
-offset_top = -199.0
-offset_right = -297.0
-offset_bottom = -109.0
+offset_left = -340.0
+offset_top = -97.0
+offset_right = -250.0
+offset_bottom = -7.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 60

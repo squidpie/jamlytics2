@@ -52,7 +52,7 @@ func _on_level_complete(args) -> void:
 		is_tutorial_active = false
 	if passed and level < 7:
 		shard_mask |= 1 << (level - 1)
-		$CutsceneLoader.show_scene("shard_fuse_" + str(level))
+		#$CutsceneLoader.show_scene("shard_fuse_" + str(level))
 	elif passed and level == 7:
 		shard_mask = 0
 		final_score = $MainMenu/Score.text
